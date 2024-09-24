@@ -301,7 +301,7 @@ h6,
 /* Appointment */
 .Appointment {
     padding: 20px;
-    background-image: url("/images/appointment.webp");
+    background-image: url("../images/appointment.webp");
     /* background-image: url("/images/back.webp"); */
     /* background-image: url("/images/hero-bg.w
     ebp"); */

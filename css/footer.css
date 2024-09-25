@@ -5,10 +5,11 @@
     color: #f0f0f0;
     text-decoration: none;
     transition: color 0.3s ease-in-out;
+    text-align: start;
 }
 
 .footer a:hover {
-    color: #f9a826;
+    color: #B78D65;
     /* Change to a bright color when hovering */
     text-decoration: underline;
 }
@@ -18,7 +19,9 @@
     font-size: 18px;
     text-transform: uppercase;
     margin-bottom: 20px;
-    color: #f9a826;
+    color: #B78D65;
+    text-align: start;
+
     /* Bright yellow-orange */
 }
 
@@ -29,15 +32,17 @@
     align-items: center;
     background-color: #333;
     width: 40px;
+    color: #B78D65;
     height: 40px;
     margin-right: 10px;
     border-radius: 4px;
 }
 
 .footer .btn-square span {
-    color: #f9a826;
+    color: #B78D65;
     font-size: 18px;
 }
+
 
 .footer .d-flex span {
     font-size: 16px;
@@ -54,7 +59,7 @@
 }
 
 .footer .btn-link:hover {
-    color: #f9a826;
+    color: #B78D65;
     text-decoration: underline;
 }
 
@@ -72,7 +77,7 @@
 }
 
 .footer .btn-primary {
-    background-color: #f9a826;
+    background-color: #B78D65;
     border: none;
     padding: 10px 20px;
     cursor: pointer;
@@ -92,9 +97,12 @@
     font-size: 18px;
     line-height: 40px;
     margin-right: 5px;
-    color: #f9a826;
+    color: #B78D65 !important;
     display: inline-block;
+    /* display: flex; */
     text-align: center;
+    /* align-items: center; */
+    /* justify-content: center; */
 }
 
 .footer .btn-lg-square:hover {
@@ -110,7 +118,7 @@
 }
 
 .footer .copyright a {
-    color: #f9a826;
+    color: #B78D65;
 }
 
 .footer .copyright a:hover {
@@ -124,7 +132,7 @@
     }
 
     .footer .d-flex {
-        justify-content: center;
+        justify-content: start;
     }
 
     .footer .col-md-6 {

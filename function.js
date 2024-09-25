@@ -64,7 +64,15 @@ document.addEventListener('DOMContentLoaded', function () {
         todayHighlight: true
     });
 });
+function toAppointment(event) {
+    event.preventDefault()
+    event.stopPropagation()
+    var targetPosition = $('#Appointment').offset().top;
+    $('html, body').animate({ scrollTop: targetPosition }, 1500, 'easeInOutExpo');
+    closeNav()
 
+    return false;
+}
 
 (function ($) {
     "use strict";
@@ -103,10 +111,17 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
     $('.back-to-top').click(function () {
+        //find position of element with id contact
         $('html, body').animate({ scrollTop: 0 }, 1500, 'easeInOutExpo');
         return false;
     });
-
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 300) {
+            $('.whatsapp-flt').fadeIn('slow');
+        } else {
+            $('.whatsapp-flt').fadeOut('slow');
+        }
+    });
 
     // Testimonials carousel
     $('.testimonial-carousel').owlCarousel({

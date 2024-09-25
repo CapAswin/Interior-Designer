@@ -53,6 +53,15 @@ body {
     z-index: 99;
 }
 
+.whatsapp-flt {
+    position: fixed;
+    display: none;
+    right: 30px;
+    bottom: 90px;
+    z-index: 99;
+    font-size: 22px !important;
+}
+
 body::-webkit-scrollbar {
     width: 12px;
 }

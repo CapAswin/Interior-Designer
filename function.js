@@ -13,9 +13,9 @@ window.addEventListener("scroll", () => {
     }
     lastScrollY = window.scrollY;
 });
-document.getElementById("Landingimg").addEventListener('click', function (event) {
-    header.style.top = header.style.top !== "-60px" ? "-60px" : "0px";
-})
+// document.getElementById("Landingimg").addEventListener('click', function (event) {
+//     header.style.top = header.style.top !== "-60px" ? "-60px" : "0px";
+// })
 // Close the drawer if clicking outside of it
 document.addEventListener('click', function (event) {
     const drawer = document.getElementById('mySidenav');

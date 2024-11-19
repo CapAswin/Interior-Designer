@@ -348,71 +348,89 @@ h6,
 }
 
 .projectRoute .container {
-    background-color: #ffffff; /* White container */
+    background-color: #ffffff;
+    /* White container */
     padding: 20px;
     max-width: 1000px;
     border-radius: 8px;
     text-align: center;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
-  }
-  .projectRoute .header {
-    background-color: #B78D65; /* Muted brown header */
+}
+
+.projectRoute .header {
+    background-color: #B78D65;
+    /* Muted brown header */
     color: #fff;
     padding: 8px;
     border-radius: 4px;
     font-weight: bold;
     margin-bottom: 20px;
-  }
-  .projectRoute .title {
+}
+
+.projectRoute .title {
     font-size: 24px;
     font-weight: bold;
     color: #333;
-  }
-  .projectRoute .days {
-    color: #B78D65; /* Same muted brown as header */
-  }
-  .projectRoute .steps {
+}
+
+.projectRoute .days {
+    color: #B78D65;
+    /* Same muted brown as header */
+}
+
+.projectRoute .steps {
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin: 20px 0;
-  }
-  .projectRoute .step-container {
+}
+
+.projectRoute .step-container {
     display: flex;
     align-items: center;
-  }
-  .projectRoute .step {
+}
+
+.projectRoute .step {
     text-align: center;
     width: 150px;
-  }
-  .projectRoute .step div{
+}
+
+.projectRoute .step div {
     width: 80px;
     height: 80px;
-  }
-  .projectRoute .step img {
+}
+
+.projectRoute .step img {
     width: 60px;
     height: 60px;
-    background-color: #f5f5f5; /* Matches page background */
+    background-color: #f5f5f5;
+    /* Matches page background */
     border-radius: 50%;
     padding: 10px;
-    border: 1px solid #B78D65; /* Border matches muted brown */
+    border: 1px solid #B78D65;
+    /* Border matches muted brown */
     transition: background-color 0.3s, color 0.3s;
-  }
-  .projectRoute .step img:hover {
-    background-color: #B78D65; /* Muted brown color on hover */
+}
+
+.projectRoute .step img:hover {
+    background-color: #B78D65;
+    /* Muted brown color on hover */
     color: #fff;
-  }
-  .projectRoute .step-title {
+}
+
+.projectRoute .step-title {
     margin-top: 10px;
     font-size: 14px;
     color: #333;
-  }
-  .projectRoute .arrow {
+}
+
+.projectRoute .arrow {
     font-size: 24px;
     color: #B78D65;
     margin: 0 10px;
-  }
-  .projectRoute .contact-buttons {
+}
+
+.projectRoute .contact-buttons {
     position: fixed;
     right: 10px;
     top: 50%;
@@ -420,8 +438,9 @@ h6,
     display: flex;
     flex-direction: column;
     gap: 10px;
-  }
-  .projectRoute .contact-button {
+}
+
+.projectRoute .contact-button {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -431,9 +450,11 @@ h6,
     color: #fff;
     font-size: 20px;
     cursor: pointer;
-    background-color: #B78D65; /* Muted brown for buttons */
-  }
-  .projectRoute .estimate-button {
+    background-color: #B78D65;
+    /* Muted brown for buttons */
+}
+
+.projectRoute .estimate-button {
     background-color: #B78D65;
     color: #fff;
     padding: 10px 20px;
@@ -442,5 +463,60 @@ h6,
     cursor: pointer;
     text-decoration: none;
     display: inline-block;
-  }
-  
+}
+
+.process-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    max-width: 1200px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.process-step {
+    flex: 1;
+    background-color: #fdf6f3;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.step-image {
+    width: 100%;
+    height: 150px;
+    background-color: #e5e5e5;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.step-title {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.step-desc {
+    font-size: 0.9em;
+    color: #777;
+}
+
+@media (max-width: 768px) {
+    .process-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .process-step {
+        width: 100%;
+    }
+}

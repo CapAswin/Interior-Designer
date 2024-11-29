@@ -8296,7 +8296,7 @@ fieldset:disabled .btn {
 }
 
 .text-info {
-    color: #0dcaf0 !important
+    color: red !important
 }
 
 .text-warning {

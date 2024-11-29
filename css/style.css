@@ -469,7 +469,7 @@ h6,
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 10px;
+    gap: 25px;
     /* max-width: 1200px; */
     width: 100%;
     background-color: #fff;
@@ -509,6 +509,7 @@ h6,
 .step-desc {
     font-size: 0.9em;
     color: #777;
+    height: 25px;
 }
 
 @media (max-width: 768px) {

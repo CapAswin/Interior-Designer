@@ -255,23 +255,25 @@ header {
 }
 #MainText {
   font-family: "AvenirBook", sans-serif;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1.5);
   bottom: 0%;
   position: absolute;
 }
 #MainText p {
   font-size: 25px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); */
   /* color: transparent; */
   /* -webkit-text-stroke: 1px black; */
   text-align: start;
   /* height: 100vh; */
-  font-family: "Montserrat", sans-serif;
+  /* font-family: "Montserrat", sans-serif; */
   font-weight: 100;
+  font-family: "Palatino", sans-serif;
 }
 
 #MainText h1 {
   font-family: "Montserrat", sans-serif;
+  /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); */
   color: white;
   padding-top: 50px;
   text-align: start;
@@ -303,7 +305,7 @@ header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
+  padding: 5px;
 }
 
 .social-links {
@@ -320,6 +322,8 @@ header .container {
 
 .contact-info {
   display: flex;
+  justify-content: center;
+  align-items: center;
   /* float: right; */
   margin-left: 20px;
 }
@@ -425,7 +429,7 @@ footer {
 .custom-footer a:hover {
   text-decoration: underline;
 }
-.contact-info {
+.contact-info1 {
   display: flex;
   font-size: 16px;
   margin-bottom: 10px;

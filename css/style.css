@@ -431,8 +431,12 @@ footer {
 }
 .contact-info1 {
   display: flex;
-  font-size: 16px;
   margin-bottom: 10px;
+}
+.contact-info1 p,
+.contact-info1 a {
+  font-size: 14px;
+  font-family: "avenirbook", sans-serif;
 }
 
 h1,

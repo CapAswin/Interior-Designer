@@ -20,6 +20,10 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Oswald:wght@600&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
 
     <link href="lib/animate/animate.min.css" rel="stylesheet" />
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
@@ -34,36 +38,19 @@
       rel="stylesheet"
     />
 
-    <link
+    <!-- <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
-    />
+    /> -->
 
     <!-- Datepicker CSS (vanillajs-datepicker) -->
     <link
       href="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.2.0/dist/css/datepicker.min.css"
       rel="stylesheet"
     />
-    <style>
-      .btn-primary {
-        background-color: #b78d65 !important;
-        border-color: #b78d65 !important;
-      }
-
-      .text-primary {
-        color: #b78d65 !important;
-      }
-
-      .bg-primary {
-        background-color: #b78d65 !important;
-      }
-
-      .border-primary {
-        border-color: #b78d65 !important;
-      }
-    </style>
+    <style></style>
   </head>
 
   <body>
@@ -355,9 +342,12 @@
           </h1>
         </div>
         <div class="row g-4 wow fadeInUp" data-wow-delay="0.3s">
-          <div class="col-lg-4">
+          <div
+            id="btns-services"
+            class="col-lg-4 d-flex justify-content-center align-items-center"
+          >
             <div
-              class="nav nav-pills d-flex justify-content-between w-100 h-90 me-4"
+              class="nav nav-pills d-flex justify-content-between w-100 h-90"
             >
               <button
                 class="btn-primary nav-link w-100 d-flex align-items-center text-start p-4 mb-2 active"
@@ -398,7 +388,7 @@
               <div class="tab-pane fade show active" id="tab-pane-1">
                 <div class="row g-4">
                   <div class="col-md-6" style="min-height: 300px">
-                    <div class="position-relative h-90">
+                    <div class="position-relative h-100">
                       <img
                         class="position-absolute img-fluid w-100 h-100"
                         src="img/project-1.jpg"
@@ -407,7 +397,7 @@
                       />
                     </div>
                   </div>
-                  <div class="col-md-6">
+                  <div class="col-md-6 h-90">
                     <h2 class="mb-3">
                       25 Years Of Experience In Architecture Industry
                     </h2>
@@ -438,7 +428,7 @@
               <div class="tab-pane fade h-9" id="tab-pane-2">
                 <div class="row g-4">
                   <div class="col-md-6" style="min-height: 300px">
-                    <div class="position-relative h-90">
+                    <div class="position-relative h-100">
                       <img
                         class="position-absolute img-fluid w-100 h-100"
                         src="img/project-2.jpg"
@@ -478,7 +468,7 @@
               <div class="tab-pane fade" id="tab-pane-3">
                 <div class="row g-4">
                   <div class="col-md-6" style="min-height: 300px">
-                    <div class="position-relative h-90">
+                    <div class="position-relative h-100">
                       <img
                         class="position-absolute img-fluid w-100 h-100"
                         src="img/project-3.jpg"
@@ -518,7 +508,7 @@
               <div class="tab-pane fade" id="tab-pane-4">
                 <div class="row g-4 h-90">
                   <div class="col-md-6" style="min-height: 300px">
-                    <div class="position-relative h-90">
+                    <div class="position-relative h-100">
                       <img
                         class="position-absolute img-fluid w-100 h-100"
                         src="img/project-4.jpg"
@@ -634,7 +624,10 @@
                 />
               </div>
               <div class="col-12 col-sm-6">
-                <select class="form-select" style="height: 55px">
+                <select
+                  class="form-select"
+                  style="height: 55px; margin: 0.5rem 0"
+                >
                   <option selected>Choose Service</option>
                   <option value="1">Service 1</option>
                   <option value="2">Service 2</option>
@@ -682,89 +675,37 @@
     </div>
     <!-- Appointment End -->
 
-    <footer class="footer">
-      <div
-        class="container-fluid bg-secondary text-light footer wow fadeIn"
-        data-wow-delay="0.1s"
-      >
-        <div class="container py-5">
-          <div class="row g-5">
-            <div class="col-lg-4 col-md-6">
-              <h4 class="text-uppercase mb-4">Get In Touch</h4>
-              <div class="d-flex mb-2">
-                <div class="btn-square bg-dark flex-shrink-0 me-3">
-                  <span class="fa fa-map-marker-alt"></span>
-                </div>
-                <span>123 Street, New York, USA</span>
-              </div>
-              <div class="d-flex mb-2">
-                <div class="btn-square bg-dark flex-shrink-0 me-3">
-                  <span class="fa fa-phone-alt"></span>
-                </div>
-                <span>+91 974 509 3516</span>
-              </div>
-              <div class="d-flex">
-                <div class="btn-square bg-dark flex-shrink-0 me-3">
-                  <span class="fa fa-envelope-open"></span>
-                </div>
-                <span>info@example.com</span>
-              </div>
-            </div>
-            <div class="d-flex1 col-lg-4 col-md-6">
-              <h4 class="text-uppercase mb-4">Quick Links</h4>
-              <a class="btn btn-link" href="">About Us</a>
-              <a class="btn btn-link" onclick="toAppointment(event)" href="#"
-                >Contact Us</a
-              >
-              <a class="btn btn-link" href="">Our Services</a>
-              <a class="btn btn-link" href="">Terms & Condition</a>
-              <a class="btn btn-link" href="">Support</a>
-            </div>
-            <div class="col-lg-4 col-md-6">
-              <h4 class="text-uppercase mb-4">Newsletter</h4>
-              <div class="position-relative mb-4">
-                <input
-                  class="form-control border-0 w-100 py-3 ps-4 pe-5"
-                  type="text"
-                  placeholder="Your email"
-                />
-                <button
-                  type="button"
-                  class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2"
-                >
-                  Subscribe
-                </button>
-              </div>
-              <div class="d-flex pt-1 m-n1">
-                <a class="btn btn-lg-square btn-dark text-primary m-1" href=""
-                  ><i class="fab fa-twitter"></i
-                ></a>
-                <a class="btn btn-lg-square btn-dark text-primary m-1" href=""
-                  ><i class="fab fa-facebook-f"></i
-                ></a>
-                <a class="btn btn-lg-square btn-dark text-primary m-1" href=""
-                  ><i class="fab fa-youtube"></i
-                ></a>
-                <a class="btn btn-lg-square btn-dark text-primary m-1" href=""
-                  ><i class="fab fa-linkedin-in"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- <div>
-                <div class="copyright">
-                    <div class="row">
-                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                            &copy; <a class="border-bottom" href="#">Your Site Name</a>, All Right Reserved.
-                        </div>
-                        <div class="col-md-6 text-center text-md-end">
-                            /*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/
-                            Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
+    <footer class="custom-footer">
+      <h1 style="font-family: 'Playfair Display', serif">contact</h1>
+      <p>
+        inspired, curious or ready to redecorate?<br />
+        we'd love to hear from you so don't hesitate to get in touch.
+      </p>
+      <div class="contact-info d-flex flex-column">
+        <p>2201 old court rd,<br />pikesville, md 21208</p>
+        <p>
+          <a href="mailto:info@cashmereinterior.com"
+            >info@cashmereinterior.com</a
+          >
+        </p>
+        <a class="btn-primary2" href="tel:+919745093516">
+          <i class="fa fa-phone-alt"></i>
+          <span>+91 974 5093 516</span>
+        </a>
+      </div>
+      <div class="d-flex justify-content-center gap-4 mt-5">
+        <a
+          class="btn-primary1"
+          href="https://www.instagram.com//rahulmenakath"
+          target="_blank"
+          ><i class="fab fa-instagram fa-2x"></i
+        ></a>
+        <a
+          class="btn-primary1"
+          href="https://www.facebook.com/yourfacebookid"
+          target="_blank"
+          ><i class="fab fa-facebook-f fa-2x"></i
+        ></a>
       </div>
     </footer>
     <!-- Back to Top -->
@@ -779,9 +720,9 @@
     ></a>
 
     <!-- libraries -->
-
+    <script src="./js/bootstrap.bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script> -->
     <script src="lib/wow/wow.min.js"></script>
     <script src="lib/easing/easing.min.js"></script>
     <script src="lib/waypoints/waypoints.min.js"></script>

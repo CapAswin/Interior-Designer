@@ -22,7 +22,6 @@ document.addEventListener("click", function (event) {
   const toggleButton = document.getElementById("toggleDrawer");
   const isClickInsideDrawer = drawer.contains(event.target);
   const isClickToggleButton = toggleButton.contains(event.target);
-  console.log(isClickInsideDrawer, isClickToggleButton);
   if (!isClickInsideDrawer && !isClickToggleButton) {
     closeNav(event);
   }

@@ -28,7 +28,6 @@ document.addEventListener("click", function (event) {
 });
 
 function openNav(e) {
-  console.log("first");
   document.body.style.overflow = "hidden";
   document.getElementById("mySidenav").style.width = "250px";
   e.stopPropagation();

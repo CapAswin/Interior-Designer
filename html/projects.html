@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/webp" href="../images/sampleLG.webp" />
+
+    <title>Interior Design Company</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/navbar.css" />
+    <link rel="stylesheet" href="../css/card.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="../css/services.css" />
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Oswald:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="lib/animate/animate.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+
+    <!-- Icon Font Stylesheet -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Spinner Start -->
+    <div
+      id="spinner"
+      class="show bg-dark position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
+    >
+      <div
+        class="spinner-grow text-primary"
+        style="width: 3rem; height: 3rem"
+        role="status"
+      >
+        <span class="sr-only">Loading...</span>
+      </div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- heared start -->
+    <header id="header">
+      <div class="container">
+        <div class="logo">
+          <h1>TeakRoom</h1>
+        </div>
+
+        <div class="contact-info" onclick="justClick(event)">
+          <div class="social-links">
+            <!-- <a href="#"><i class="fab fa-twitter"></i></a> -->
+            <a
+              class="btn-primary1"
+              href="https://www.facebook.com/yourfacebookid"
+              target="_blank"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a
+              class="btn-primary1"
+              href="https://www.linkedin.com/in/aswin-krishna-9b311831b/"
+              target="_blank"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+            <a
+              class="btn-primary1"
+              href="https://www.instagram.com//rahulmenakath"
+              target="_blank"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </div>
+          <a
+            class="btn-primary1"
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=contact@trikayainteriors.com&su=Interior%20Design%20Inquiry&body=Hello%20Trikaya%20Interiors,%0D%0A%0D%0AI%20am%20interested%20in%20your%20interior%20design%20services.%20Please%20provide%20me%20with%20more%20information.%0D%0A%0D%0AThank%20you!%0D%0A"
+            target="_blank"
+          >
+            <i class="fas fa-envelope"></i>
+            <span class="phone-number">youremail@domain.com</span>
+          </a>
+          <a
+            class="btn-primary1"
+            href="https://wa.me/919745093516"
+            target="_blank"
+          >
+            <i class="fab fa-whatsapp"></i>
+          </a>
+          <a class="btn-primary1" href="tel:+919745093516">
+            <i class="fa fa-phone-alt"></i>
+            <span class="phone-number">+91 974 5093 516</span>
+          </a>
+          <button onclick="openNav(event)" id="toggleDrawer">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- heared End -->
+    <!-- drawer -->
+    <div id="mySidenav" class="sidenav">
+      <div class="drawer-content">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav(event)"
+          >&times;</a
+        >
+        <div class="sidenavContent">
+          <a href="../index.html">About</a>
+          <a href="#">Services</a>
+          <a href="#" class="activeNav" onclick="closeNav()">Projects</a>
+          <a href="#">Clients</a>
+          <a href="#" onclick="toAppointment(event)">Contact</a>
+          <div class="sideNavFooter">
+            <p>2201 old court rd,<br />pikesville, md 21208</p>
+            <p>
+              <a href="mailto:youremail@domain.com">youremail@domain.com</a>
+            </p>
+            <p>
+              <a class="btn-primary2" href="tel:+919745093516">
+                <i class="fa fa-phone-alt"></i>
+                <span>+91 974 5093 516</span>
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- drawerend -->
+    <a
+      href="https://wa.me/919745093516"
+      target="_blank"
+      class="btn btn-lg btn-primary btn-lg-square whatsapp-flt"
+      ><i class="fab fa-whatsapp"></i
+    ></a>
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"
+      ><i class="bi bi-arrow-up"></i
+    ></a>
+    <!-- libraries -->
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script> -->
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <!-- js for the tmplate -->
+    <script src="../function.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.2.0/dist/js/datepicker-full.min.js"></script>
+  </body>
+</html>

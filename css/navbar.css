@@ -50,8 +50,9 @@
   transition: 0.3s;
 }
 
-.sidenav a:hover {
-  color: #f1f1f1;
+.sidenav a:hover,
+.activeNav {
+  color: #f1f1f1 !important;
   margin-left: 10px;
 }
 

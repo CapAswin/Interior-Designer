@@ -23,23 +23,22 @@ document.addEventListener("click", function (event) {
     closeNav(event);
   }
 });
-backdrop.addEventListener("wheel", (e) => {
+backdrop?.addEventListener("wheel", (e) => {
   e.preventDefault();
   e.stopPropagation();
 });
-drawer.addEventListener("wheel", (e) => {
+drawer?.addEventListener("wheel", (e) => {
   e.preventDefault();
   e.stopPropagation();
 });
 function openNav(e) {
+  backdrop?.classList?.toggle("active");
   document.getElementById("mySidenav").style.width = "250px";
-  backdrop.classList.toggle("active");
   e.stopPropagation();
 }
 
 function closeNav(e) {
-  document.body.style.overflow = "";
-  backdrop.classList.remove("active");
+  backdrop?.classList?.remove("active");
   document.getElementById("mySidenav").style.width = "0";
 }
 function justClick(e) {

@@ -1,5 +1,4 @@
 // script.js
-
 let lastScrollY = window.scrollY;
 const header = document.getElementById("header");
 
@@ -33,7 +32,6 @@ drawer.addEventListener("wheel", (e) => {
   e.stopPropagation();
 });
 function openNav(e) {
-  // document.body.style.overflow = "hidden";
   document.getElementById("mySidenav").style.width = "250px";
   backdrop.classList.toggle("active");
   e.stopPropagation();

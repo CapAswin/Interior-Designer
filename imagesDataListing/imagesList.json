@@ -1,7 +1,32 @@
 [
-    {
-        "category":"category 1", 
-        "path":"",
-        "fileName":""
-    }
+  {
+    "category": "stair",
+    "url": "../images/projects/stair/stair-1.webp",
+    "name": "stair"
+  },
+  {
+    "category": "stair",
+    "url": "../images/projects/stair/stair-2.webp",
+    "name": "stair"
+  },
+  {
+    "category": "stair",
+    "url": "../images/projects/stair/stair-3.webp",
+    "name": "stair"
+  },
+  {
+    "category": "stair",
+    "url": "../images/projects/stair/stair-4.webp",
+    "name": "stair"
+  },
+  {
+    "category": "stair",
+    "url": "../images/projects/stair/stair-5.webp",
+    "name": ""
+  },
+  {
+    "category": "stair",
+    "url": "../images/projects/stair/stair-6.webp",
+    "name": ""
+  }
 ]

@@ -3,7 +3,7 @@
 let lastScrollY = window.scrollY;
 const header = document.getElementById("header");
 
-window.addEventListener("scroll", () => {
+window.addEventListener("scroll", (e) => {
   if (window.scrollY > lastScrollY) {
     // Scrolling down, hide the header
     header.style.top = "-60px";
@@ -13,15 +13,13 @@ window.addEventListener("scroll", () => {
   }
   lastScrollY = window.scrollY;
 });
-// document.getElementById("Landingimg").addEventListener('click', function (event) {
-//     header.style.top = header.style.top !== "-60px" ? "-60px" : "0px";
-// })
 // Close the drawer if clicking outside of it
+const backdrop = document.getElementById("backdrop");
+const drawer = document.getElementById("mySidenav");
+const toggleButton = document.getElementById("toggleDrawer");
 document.addEventListener("click", function (event) {
-  const drawer = document.getElementById("mySidenav");
-  const toggleButton = document.getElementById("toggleDrawer");
-  const isClickInsideDrawer = drawer.contains(event.target);
-  const isClickToggleButton = toggleButton.contains(event.target);
+  const isClickInsideDrawer = drawer?.contains(event.target);
+  const isClickToggleButton = toggleButton?.contains(event.target);
   if (!isClickInsideDrawer && !isClickToggleButton) {
     closeNav(event);
   }
@@ -30,11 +28,13 @@ document.addEventListener("click", function (event) {
 function openNav(e) {
   document.body.style.overflow = "hidden";
   document.getElementById("mySidenav").style.width = "250px";
+  backdrop.classList.toggle("active");
   e.stopPropagation();
 }
 
 function closeNav(e) {
   document.body.style.overflow = "";
+  backdrop.classList.remove("active");
   document.getElementById("mySidenav").style.width = "0";
   e.stopPropagation();
 }

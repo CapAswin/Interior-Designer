@@ -24,9 +24,12 @@ document.addEventListener("click", function (event) {
     closeNav(event);
   }
 });
-
+backdrop.addEventListener("wheel", (e) => {
+  e.preventDefault();
+  e.stopPropagation();
+});
 function openNav(e) {
-  document.body.style.overflow = "hidden";
+  // document.body.style.overflow = "hidden";
   document.getElementById("mySidenav").style.width = "250px";
   backdrop.classList.toggle("active");
   e.stopPropagation();
@@ -49,11 +52,11 @@ window.addEventListener("scroll", function () {
   const footerHeight = footer?.offsetHeight;
 
   if (scrollPosition >= window.innerHeight - footerHeight) {
-    footer.classList.add("active");
-    footerLinks.classList.add("active");
+    footer?.classList?.add("active");
+    footerLinks?.classList?.add("active");
   } else {
-    footer.classList.remove("active");
-    footerLinks.classList.remove("active");
+    footer?.classList?.remove("active");
+    footerLinks?.classList?.remove("active");
   }
 });
 

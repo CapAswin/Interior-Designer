@@ -60,13 +60,6 @@ window.addEventListener("scroll", function () {
   }
 });
 
-document.addEventListener("DOMContentLoaded", function () {
-  var datepicker = new Datepicker(document.getElementById("datepicker"), {
-    autohide: true,
-    format: "dd/mm/yyyy",
-    todayHighlight: true,
-  });
-});
 function toAppointment(event) {
   event.preventDefault();
   event.stopPropagation();
@@ -134,3 +127,12 @@ function toAppointment(event) {
     dotsData: true,
   });
 })(jQuery);
+
+document.addEventListener("DOMContentLoaded", function () {
+  if (document.getElementById("WholePage"))
+    var datepicker = new Datepicker(document.getElementById("datepicker"), {
+      autohide: true,
+      format: "dd/mm/yyyy",
+      todayHighlight: true,
+    });
+});

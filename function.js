@@ -28,6 +28,10 @@ backdrop.addEventListener("wheel", (e) => {
   e.preventDefault();
   e.stopPropagation();
 });
+drawer.addEventListener("wheel", (e) => {
+  e.preventDefault();
+  e.stopPropagation();
+});
 function openNav(e) {
   // document.body.style.overflow = "hidden";
   document.getElementById("mySidenav").style.width = "250px";
@@ -39,7 +43,6 @@ function closeNav(e) {
   document.body.style.overflow = "";
   backdrop.classList.remove("active");
   document.getElementById("mySidenav").style.width = "0";
-  e.stopPropagation();
 }
 function justClick(e) {
   e.stopPropagation();

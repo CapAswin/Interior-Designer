@@ -28,5 +28,10 @@
     "category": "stair",
     "url": "../images/projects/stair/stair-6.webp",
     "name": ""
+  },
+  {
+    "category": "chair",
+    "url": "../images/projects/chair/sittingArea.jpg",
+    "name": "Sofa"
   }
 ]

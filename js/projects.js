@@ -1,6 +1,6 @@
-import data from "../imagesDataListing/imagesList.json";
+import { data } from "../imagesDataListing/imagesList.js";
+console.log(data);
 let arrayOfData = async () => {
-  console.log(data);
   const gallery = document.getElementById("projectBody");
   // Loop through each item in the JSON
   data.forEach((item) => {

@@ -14,12 +14,12 @@ const data = [
       },
       {
         name: "",
-        path: "../images/projects/stair/stair-3.webp",
+        path: "../images/projects/stair/stair-4.webp",
         discription: "",
       },
       {
         name: "",
-        path: "../images/projects/stair/stair-4.webp",
+        path: "../images/projects/stair/stair-3.webp",
         discription: "",
       },
       {
@@ -69,10 +69,10 @@ const data = [
 let eachImg = (item, gallery) => {
   item.imgs.forEach((e) => {
     const card = document.createElement("li");
-    card.style.padding = "10px";
-    card.style.margin = "10px";
-    card.style.display = "inline-block";
-    card.style.textAlign = "center";
+    // card.style.padding = "15px";
+    // card.style.margin = "15px";
+    // card.style.display = "inline-block";
+    // card.style.textAlign = "center";
 
     // Create and append an image
     const img = document.createElement("img");
@@ -80,7 +80,6 @@ let eachImg = (item, gallery) => {
     img.src = e.path;
     img.alt = e.name;
     img.style.borderRadius = "5px";
-    img.style.width = "200px";
     img.style.height = "auto";
     card.appendChild(img);
 
@@ -103,9 +102,6 @@ let arrayOfData = async () => {
   const parentGallery = document.getElementById("bodyForProject");
   data.forEach((item) => {
     const listUl = document.createElement("ul");
-    listUl.style.gap = "5px"; // Adjust the gap between list items
-    listUl.style.listStyle = "none";
-    listUl.style.columnCount = "3";
     if (item.imgs.length !== 0) {
       // Create a container for each category
       const categoryContainer = document.createElement("div");

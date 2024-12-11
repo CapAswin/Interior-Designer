@@ -55,7 +55,7 @@ const data = [
     ],
   },
   {
-    category: "chair",
+    category: "Chair",
     imgs: [
       {
         name: "",

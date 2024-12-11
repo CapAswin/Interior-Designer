@@ -65,33 +65,47 @@ const data = [
     ],
   },
 ];
+const parentGallery = document.getElementById("bodyForProject");
+let listedImageCtg = "";
 let eachImg = (item, gallery) => {
-  item.imgs.forEach((e) => {
-    const card = document.createElement("li");
+  if (listedImageCtg === item.category) {
+    return;
+  } else {
+    item.imgs.forEach((e) => {
+      const card = document.createElement("li");
 
-    // Create and append an image
-    const img = document.createElement("img");
-    img.className = "hover-effect";
-    img.src = e.path;
-    card.appendChild(img);
+      // Create and append an image
+      const img = document.createElement("img");
+      img.className = "hover-effect";
+      img.src = e.path;
+      card.appendChild(img);
 
-    // Create and append a title
-    const title = document.createElement("h3");
-    title.textContent = item.name;
-    card.appendChild(title);
+      // Create and append a title
+      const title = document.createElement("h3");
+      title.textContent = item.name;
+      card.appendChild(title);
 
-    // Create and append a description
-    const desc = document.createElement("p");
-    desc.textContent = item?.description;
-    card.appendChild(desc);
+      // Create and append a description
+      const desc = document.createElement("p");
+      desc.textContent = item?.description;
+      card.appendChild(desc);
 
-    // Append the card to the gallery
-    gallery.appendChild(card);
-  });
+      // Append the card to the gallery
+      gallery.appendChild(card);
+    });
+    listedImageCtg = item.category;
+  }
 };
-
+let imageInitial = (click) => {
+  const btn = document.createElement("button");
+  btn.onclick = () => {
+    click();
+    console.log("Button clicked!");
+  };
+  btn.textContent = "abc";
+  parentGallery.appendChild(btn);
+};
 let arrayOfData = async () => {
-  const parentGallery = document.getElementById("bodyForProject");
   data.forEach((item) => {
     const listUl = document.createElement("ul");
     if (item.imgs.length !== 0) {
@@ -120,7 +134,12 @@ let arrayOfData = async () => {
       categoryContainer.appendChild(gallery);
 
       // Populate the gallery with images
-      eachImg(item, listUl);
+      if (item.imgs.length < 3) {
+        eachImg(item, listUl);
+      } else {
+        let abc = () => eachImg(item, listUl);
+        imageInitial(abc);
+      }
 
       // Append the category container to the parent gallery
       parentGallery.appendChild(categoryContainer);

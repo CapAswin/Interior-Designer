@@ -64,6 +64,41 @@ const data = [
       },
     ],
   },
+  {
+    category: "Bed Room",
+    imgs: [
+      {
+        name: "",
+        path: "../images/projects/bedRoom/bed-1.jpg",
+        discription: "",
+      },
+      {
+        name: "",
+        path: "../images/projects/bedRoom/bed-2.jpg",
+        discription: "",
+      },
+      {
+        name: "",
+        path: "../images/projects/bedRoom/bed-3.jpg",
+        discription: "",
+      },
+      {
+        name: "",
+        path: "../images/projects/bedRoom/bed-4.jpg",
+        discription: "",
+      },
+      {
+        name: "",
+        path: "../images/projects/bedRoom/bed-5.jpg",
+        discription: "",
+      },
+      {
+        name: "",
+        path: "../images/projects/bedRoom/bed-6.jpg",
+        discription: "",
+      },
+    ],
+  },
 ];
 const parentGallery = document.getElementById("bodyForProject");
 let listedImageCtg = "";
@@ -96,13 +131,15 @@ let eachImg = (item, gallery) => {
     listedImageCtg = item.category;
   }
 };
-let imageInitial = (click) => {
+let imageInitial = (click, item) => {
   const btn = document.createElement("button");
   btn.onclick = () => {
-    click();
-    console.log("Button clicked!");
+    if (item.category !== btn.id) {
+      click();
+    }
   };
-  btn.textContent = "abc";
+  btn.id = item.category;
+  btn.textContent = item.category;
   parentGallery.appendChild(btn);
 };
 let arrayOfData = async () => {
@@ -138,7 +175,7 @@ let arrayOfData = async () => {
         eachImg(item, listUl);
       } else {
         let abc = () => eachImg(item, listUl);
-        imageInitial(abc);
+        imageInitial(abc, item);
       }
 
       // Append the category container to the parent gallery

@@ -63,24 +63,16 @@ const data = [
         discription: "",
       },
     ],
-    name: "Sofa",
   },
 ];
 let eachImg = (item, gallery) => {
   item.imgs.forEach((e) => {
     const card = document.createElement("li");
-    // card.style.padding = "15px";
-    // card.style.margin = "15px";
-    // card.style.display = "inline-block";
-    // card.style.textAlign = "center";
 
     // Create and append an image
     const img = document.createElement("img");
     img.className = "hover-effect";
     img.src = e.path;
-    img.alt = e.name;
-    img.style.borderRadius = "5px";
-    img.style.height = "auto";
     card.appendChild(img);
 
     // Create and append a title

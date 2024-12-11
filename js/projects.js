@@ -49,7 +49,6 @@ const data = [
 
 let arrayOfData = async () => {
   const gallery = document.getElementById("projectBody");
-  // Loop through each item in the JSON
   data.forEach((item) => {
     // Create an image card
     item.imgs.map((e) => {

@@ -1,5 +1,6 @@
 body {
 }
 .projectBody {
+  padding-top: 50px;
   height: 200dvh;
 }

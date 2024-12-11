@@ -1,6 +1,21 @@
 body {
 }
-.projectBody {
+.bodyForProject {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
   padding-top: 50px;
-  height: 200dvh;
+  margin: 10px;
+  /* height: 200dvh; */
+}
+.projectBody {
+  width: 85%;
+}
+.hover-effect {
+  transition: transform 0.2s ease;
+}
+.hover-effect:hover {
+  transform: scale(1.05);
 }

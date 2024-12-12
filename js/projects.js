@@ -104,7 +104,7 @@ const data = [
     imgs: [
       {
         name: "",
-        path: "../images/projects/hall/hall-1.webp",
+        path: "../images/projects/hall/hall-1.jpg",
         discription: "",
       },
       {
@@ -125,6 +125,16 @@ const data = [
       {
         name: "",
         path: "../images/projects/hall/hall-5.jpg",
+        discription: "",
+      },
+      {
+        name: "",
+        path: "../images/projects/hall/hall-6.webp",
+        discription: "",
+      },
+      {
+        name: "",
+        path: "../images/projects/hall/hall-7.jpg",
         discription: "",
       },
     ],

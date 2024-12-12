@@ -11,6 +11,7 @@ body {
   width: 100%;
   background-color: #46403d;
   /* height: 200dvh; */
+  transition: height 0.2s ease;
 }
 .bodyForProject h1,
 #header h1,
@@ -134,7 +135,7 @@ body {
     padding-bottom: 40px;
   }
   .hover-effect {
-    width: 305px;
+    width: 255px;
   }
 }
 @media only screen and (min-width: 3840px) {

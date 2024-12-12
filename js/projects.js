@@ -128,17 +128,29 @@ let eachImg = (item, gallery) => {
   listedImageCtg = item.category;
 };
 let imageInitial = (click, item) => {
-  const btn = document.createElement("button");
   const imageContainer = document.createElement("div");
   imageContainer.className = "image-container";
-  btn.onclick = () => {
-    if (item.category !== btn.id) {
+  const imgTop = document.createElement("img");
+  imgTop.className = "img-top";
+  imgTop.src = item.imgs[0].path;
+  const imgBottomLeft = document.createElement("img");
+  imgBottomLeft.className = "img-bottom-left";
+  imgBottomLeft.src = item.imgs[1].path;
+  const imgBottomRight = document.createElement("img");
+  imgBottomRight.className = "img-bottom-right";
+  imgBottomRight.src = item.imgs[2].path;
+
+  imageContainer.onclick = () => {
+    if (item.category !== imageContainer.id) {
       click();
-      btn.id = item.category;
+      imageContainer.id = item.category;
     }
   };
-  btn.textContent = item.category;
-  parentGallery.appendChild(btn);
+  imageContainer.textContent = item.category;
+  parentGallery.appendChild(imageContainer);
+  imageContainer.appendChild(imgTop);
+  imageContainer.appendChild(imgBottomLeft);
+  imageContainer.appendChild(imgBottomRight);
 };
 let arrayOfData = async () => {
   data.forEach((item) => {

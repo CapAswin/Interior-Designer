@@ -144,7 +144,26 @@ const parentGallery = document.getElementById("bodyForProject");
 let eachImg = (item, gallery) => {
   item.imgs.forEach((e) => {
     const card = document.createElement("li");
-
+    const modal = document.createElement("div");
+    modal.className = "modal";
+    modal.style.display = "flex";
+    const modalImg = document.createElement("img");
+    modalImg.src = e.path;
+    const closeModalBtn = document.createElement("a");
+    closeModalBtn.className = "closeModalBtn";
+    closeModalBtn.innerHTML = "&times;";
+    modal.appendChild(modalImg);
+    modal.appendChild(closeModalBtn);
+    modal?.addEventListener("wheel", (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+    });
+    card.onclick = () => {
+      parentGallery.appendChild(modal);
+    };
+    closeModalBtn.onclick = () => {
+      parentGallery.removeChild(modal);
+    };
     // Create and append an image
     const img = document.createElement("img");
     img.className = "hover-effect";

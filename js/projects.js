@@ -100,7 +100,7 @@ const data = [
     ],
   },
   {
-    category: "Bed Room",
+    category: "Living Room",
     imgs: [
       {
         name: "",

@@ -140,7 +140,6 @@ body {
 }
 
 .img-top {
-  background: red;
   z-index: 3;
 }
 .image-container:hover .img-top {
@@ -154,11 +153,10 @@ body {
   margin-left: 20px;
   transform: rotate(7deg);
   position: absolute;
-  background: blue;
   z-index: 2;
 }
 .image-container:hover .img-bottom-right {
-  transform: rotate(14deg);
+  transform: rotate(12deg);
   transition: all 0.5s;
   filter: brightness(1.2);
 }
@@ -170,7 +168,7 @@ body {
   z-index: 1;
 }
 .image-container:hover .img-bottom-left {
-  transform: rotate(-14deg);
+  transform: rotate(-12deg);
   transform-origin: center;
   transition: all 0.5s;
   filter: brightness(1.2);

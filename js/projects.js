@@ -99,9 +99,38 @@ const data = [
       },
     ],
   },
+  {
+    category: "Bed Room",
+    imgs: [
+      {
+        name: "",
+        path: "../images/projects/hall/hall-1.webp",
+        discription: "",
+      },
+      {
+        name: "",
+        path: "../images/projects/hall/hall-2.jpg",
+        discription: "",
+      },
+      {
+        name: "",
+        path: "../images/projects/hall/hall-3.jpg",
+        discription: "",
+      },
+      {
+        name: "",
+        path: "../images/projects/hall/hall-4.jpg",
+        discription: "",
+      },
+      {
+        name: "",
+        path: "../images/projects/hall/hall-5.jpg",
+        discription: "",
+      },
+    ],
+  },
 ];
 const parentGallery = document.getElementById("bodyForProject");
-let listedImageCtg = "";
 let eachImg = (item, gallery) => {
   item.imgs.forEach((e) => {
     const card = document.createElement("li");
@@ -112,11 +141,6 @@ let eachImg = (item, gallery) => {
     img.src = e.path;
     card.appendChild(img);
 
-    // Create and append a title
-    const title = document.createElement("h3");
-    title.textContent = item.name;
-    card.appendChild(title);
-
     // Create and append a description
     const desc = document.createElement("p");
     desc.textContent = item?.description;
@@ -125,7 +149,6 @@ let eachImg = (item, gallery) => {
     // Append the card to the gallery
     gallery.appendChild(card);
   });
-  listedImageCtg = item.category;
 };
 let imageInitial = (click, item) => {
   const imageContainer = document.createElement("div");
@@ -181,7 +204,7 @@ let arrayOfData = async () => {
       categoryContainer.appendChild(gallery);
 
       // Populate the gallery with images
-      if (item.imgs.length < 3) {
+      if (item.imgs.length < 4) {
         eachImg(item, listUl);
       } else {
         let abc = () => eachImg(item, listUl);

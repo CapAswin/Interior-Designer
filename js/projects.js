@@ -103,42 +103,40 @@ const data = [
 const parentGallery = document.getElementById("bodyForProject");
 let listedImageCtg = "";
 let eachImg = (item, gallery) => {
-  if (listedImageCtg === item.category) {
-    return;
-  } else {
-    item.imgs.forEach((e) => {
-      const card = document.createElement("li");
+  item.imgs.forEach((e) => {
+    const card = document.createElement("li");
 
-      // Create and append an image
-      const img = document.createElement("img");
-      img.className = "hover-effect";
-      img.src = e.path;
-      card.appendChild(img);
+    // Create and append an image
+    const img = document.createElement("img");
+    img.className = "hover-effect";
+    img.src = e.path;
+    card.appendChild(img);
 
-      // Create and append a title
-      const title = document.createElement("h3");
-      title.textContent = item.name;
-      card.appendChild(title);
+    // Create and append a title
+    const title = document.createElement("h3");
+    title.textContent = item.name;
+    card.appendChild(title);
 
-      // Create and append a description
-      const desc = document.createElement("p");
-      desc.textContent = item?.description;
-      card.appendChild(desc);
+    // Create and append a description
+    const desc = document.createElement("p");
+    desc.textContent = item?.description;
+    card.appendChild(desc);
 
-      // Append the card to the gallery
-      gallery.appendChild(card);
-    });
-    listedImageCtg = item.category;
-  }
+    // Append the card to the gallery
+    gallery.appendChild(card);
+  });
+  listedImageCtg = item.category;
 };
 let imageInitial = (click, item) => {
   const btn = document.createElement("button");
+  const imageContainer = document.createElement("div");
+  imageContainer.className = "image-container";
   btn.onclick = () => {
     if (item.category !== btn.id) {
       click();
+      btn.id = item.category;
     }
   };
-  btn.id = item.category;
   btn.textContent = item.category;
   parentGallery.appendChild(btn);
 };

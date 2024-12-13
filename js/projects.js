@@ -152,8 +152,7 @@ let eachImg = (item, gallery) => {
     const closeModalBtn = document.createElement("a");
     closeModalBtn.className = "closeModalBtn";
     closeModalBtn.innerHTML = "&times;";
-    modal.appendChild(modalImg);
-    modal.appendChild(closeModalBtn);
+    modal.append(modalImg, closeModalBtn);
     modal?.addEventListener("wheel", (e) => {
       e.preventDefault();
       e.stopPropagation();
@@ -200,9 +199,7 @@ let imageInitial = (click, item) => {
   };
   imageContainer.textContent = item.category;
   parentGallery.appendChild(imageContainer);
-  imageContainer.appendChild(imgTop);
-  imageContainer.appendChild(imgBottomLeft);
-  imageContainer.appendChild(imgBottomRight);
+  imageContainer.append(imgTop, imgBottomLeft, imgBottomRight);
 };
 let arrayOfData = async () => {
   data.forEach((item) => {
@@ -241,8 +238,7 @@ let arrayOfData = async () => {
       }
 
       // Append the category container to the parent gallery
-      parentGallery.appendChild(categoryContainer);
-      parentGallery.appendChild(listUl);
+      parentGallery.append(categoryContainer, listUl);
     }
   });
 };

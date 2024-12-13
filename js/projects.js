@@ -207,13 +207,7 @@ let arrayOfData = async () => {
     if (item.imgs.length !== 0) {
       // Create a container for each category
       const categoryContainer = document.createElement("div");
-      categoryContainer.style.display = "flex";
-      categoryContainer.style.flexWrap = "wrap";
-      categoryContainer.style.flexDirection = "column";
-      categoryContainer.style.marginBottom = "5px";
-      categoryContainer.style.padding = "10px";
-      categoryContainer.style.justifyContent = "center";
-      categoryContainer.style.alignItems = "center";
+      categoryContainer.className = "categoryContainer";
 
       // Add category heading
       const categoryHead = document.createElement("h1");
@@ -222,18 +216,15 @@ let arrayOfData = async () => {
 
       // Add a gallery for the images
       const gallery = document.createElement("div");
-      gallery.style.display = "flex";
-      gallery.style.flexWrap = "wrap";
-      gallery.style.justifyContent = "center";
-      gallery.style.alignItems = "center";
-      gallery.style.padding = "10px";
+      gallery.className = "galleryImg";
+
       categoryContainer.appendChild(gallery);
 
       // Populate the gallery with images
       if (item.imgs.length < 4) {
         eachImg(item, listUl);
       } else {
-        let abc = () => eachImg(item, listUl);
+        const abc = () => eachImg(item, listUl);
         imageInitial(abc, item);
       }
 

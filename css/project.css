@@ -66,6 +66,23 @@ body {
   font-size: 36px;
   margin-left: 50px;
 }
+.galleryImg {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.categoryContainer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-bottom: 5px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
 /* Extra Small Devices (phones, 600px and below) */
 @media only screen and (max-width: 600px) {
   #bodyForProject ul {

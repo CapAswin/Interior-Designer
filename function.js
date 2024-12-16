@@ -69,6 +69,15 @@ function toAppointment(event) {
 
   return false;
 }
+function toServices(event) {
+  event.preventDefault();
+  event.stopPropagation();
+  var targetPosition = $("#Services").offset().top;
+  $("html, body").animate({ scrollTop: targetPosition }, 1500, "easeInOutExpo");
+  closeNav();
+
+  return false;
+}
 
 (function ($) {
   "use strict";

@@ -1,227 +1,230 @@
 /* Base styling for section */
 .container-xxl {
-    background-color: #f8f9fa;
-    padding: 60px 0;
+  background-color: #f8f9fa;
+  padding: 60px 0;
 }
 
 .section-title {
-    font-size: 20px;
-    font-weight: 600;
-    color: #6c757d;
-    letter-spacing: 2px;
-    text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 600;
+  color: #6c757d;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
 
 .display-5 {
-    font-weight: 700;
-    font-size: 2.5rem;
+  font-weight: 700;
+  font-size: 2.5rem;
 }
 
 /* Service Item Card */
 .service-item {
-    overflow: hidden;
-    background-color: #fff;
-    border-radius: 15px;
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
-    position: relative;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-color: #f8f9fa;
-    z-index: 1;
+  overflow: hidden;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #f8f9fa;
+  z-index: 1;
 }
 
 /* Hover zoom and movement for the entire card */
 .service-item:hover {
-    transform: translateY(-10px);
+  transform: translateY(-10px);
 }
 
 /* Background image setup */
 .service-item .bg-img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -1;
-    transition: background-size 0.6s ease, opacity 0.6s ease;
-    opacity: 0;
-    background-size: 120%;
-    /* Slightly larger initially */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  transition: background-size 0.6s ease, opacity 0.6s ease;
+  opacity: 0;
+  background-size: 120%;
+  /* Slightly larger initially */
 }
 
 /* On hover, show the background image with zoom-in */
 .service-item:hover .bg-img {
-    opacity: 1;
-    background-size: 100%;
+  opacity: 1;
+  background-size: 100%;
 }
 
 /* Service text transition */
 .service-item .service-text {
-    background: var(--light);
-    transition: background 0.5s ease;
-    position: relative;
-    padding: 40px;
+  width: 100%;
+  background: var(--light);
+  transition: background 0.5s ease;
+  position: relative;
+  padding: 40px;
 }
 
 .service-item:hover .service-text {
-    background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.7);
 }
 
 /* Text and color transitions */
 .service-item * {
-    transition: color 0.5s ease;
+  transition: color 0.5s ease;
 }
 
 .service-item:hover * {
-    color: #FFFFFF;
+  color: #ffffff;
 }
 
 /* Button styling */
 .service-item .btn {
-    width: 40px;
-    height: 40px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--dark);
-    background: #FFFFFF;
-    white-space: nowrap;
-    overflow: hidden;
-    border-radius: 20px;
-    transition: width 0.5s ease, background-color 0.5s ease;
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--dark);
+  background: #ffffff;
+  white-space: nowrap;
+  overflow: hidden;
+  border-radius: 20px;
+  transition: width 0.5s ease, background-color 0.5s ease;
 }
 
 .service-item:hover .btn {
-    width: 140px;
-    background-color: #be9874;
-    color: #FFFFFF;
+  width: 140px;
+  background-color: #be9874;
+  color: #ffffff;
 }
 
 .service-item:hover .btn i {
-    transition: transform 0.5s;
-    transform: rotate(90deg);
+  transition: transform 0.5s;
+  transform: rotate(90deg);
 }
-
+#Services {
+  padding: 20px;
+}
 /* Media Queries for Responsiveness */
 
 /* Extra Small Devices (Portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
-    .container-xxl {
-        padding: 30px 0;
-    }
+  .container-xxl {
+    padding: 30px 0;
+  }
 
-    .display-5 {
-        font-size: 1.75rem;
-    }
+  .display-5 {
+    font-size: 1.75rem;
+  }
 
-    .service-text {
-        padding: 20px;
-    }
+  .service-text {
+    padding: 20px;
+  }
 
-    .service-text img {
-        max-width: 50px;
-    }
+  .service-text img {
+    /* max-width: 50px; */
+  }
 
-    .service-text h3 {
-        font-size: 18px;
-    }
+  .service-text h3 {
+    font-size: 18px;
+  }
 
-    .service-item .btn {
-        font-size: 14px;
-    }
+  .service-item .btn {
+    font-size: 14px;
+  }
 }
 
 /* Small Devices (Landscape phones, 576px to 767px) */
 @media (min-width: 576px) and (max-width: 767.98px) {
-    .container-xxl {
-        padding: 40px 0;
-    }
+  .container-xxl {
+    padding: 40px 0;
+  }
 
-    .display-5 {
-        font-size: 2rem;
-    }
+  .display-5 {
+    font-size: 2rem;
+  }
 
-    .service-text {
-        padding: 25px;
-    }
+  .service-text {
+    padding: 25px;
+  }
 
-    .service-text h3 {
-        font-size: 20px;
-    }
+  .service-text h3 {
+    font-size: 20px;
+  }
 
-    .service-item .btn {
-        font-size: 15px;
-    }
+  .service-item .btn {
+    font-size: 15px;
+  }
 }
 
 /* Medium Devices (Tablets, 768px to 991px) */
 @media (min-width: 768px) and (max-width: 991.98px) {
-    .container-xxl {
-        padding: 50px 0;
-    }
+  .container-xxl {
+    padding: 50px 0;
+  }
 
-    .display-5 {
-        font-size: 2.25rem;
-    }
+  .display-5 {
+    font-size: 2.25rem;
+  }
 
-    .service-text {
-        padding: 30px;
-    }
+  .service-text {
+    padding: 30px;
+  }
 
-    .service-text h3 {
-        font-size: 21px;
-    }
+  .service-text h3 {
+    font-size: 21px;
+  }
 
-    .service-item .btn {
-        font-size: 16px;
-    }
+  .service-item .btn {
+    font-size: 16px;
+  }
 }
 
 /* Large Devices (Desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) {
-    .container-xxl {
-        padding: 60px 0;
-    }
+  .container-xxl {
+    padding: 60px 0;
+  }
 
-    .display-5 {
-        font-size: 2.5rem;
-    }
+  .display-5 {
+    font-size: 2.5rem;
+  }
 
-    .service-text {
-        padding: 40px;
-    }
+  .service-text {
+    padding: 40px;
+  }
 
-    .service-text h3 {
-        font-size: 22px;
-    }
+  .service-text h3 {
+    font-size: 22px;
+  }
 
-    .service-item .btn {
-        font-size: 16px;
-    }
+  .service-item .btn {
+    font-size: 16px;
+  }
 }
 
 /* Extra Large Devices (Large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-    .container-xxl {
-        padding: 60px 0;
-    }
+  .container-xxl {
+    padding: 60px 0;
+  }
 
-    .display-5 {
-        font-size: 3rem;
-    }
+  .display-5 {
+    font-size: 3rem;
+  }
 
-    .service-text {
-        padding: 50px;
-    }
+  .service-text {
+    padding: 50px;
+  }
 
-    .service-text h3 {
-        font-size: 24px;
-    }
+  .service-text h3 {
+    font-size: 24px;
+  }
 
-    .service-item .btn {
-        font-size: 18px;
-    }
+  .service-item .btn {
+    font-size: 18px;
+  }
 }

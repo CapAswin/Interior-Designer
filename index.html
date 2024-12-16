@@ -140,7 +140,7 @@
             >
             <div class="sidenavContent">
               <a href="#">About</a>
-              <a href="#">Services</a>
+              <a href="#" onclick="toServices(event)">Services</a>
               <a href="./html/projects.html">Projects</a>
               <a href="#">Clients</a>
               <a href="#" onclick="toAppointment(event)">Contact</a>
@@ -170,42 +170,13 @@
           </div>
         </section>
       </div>
-      <!-- projectRoute -->
-      <div class="process-container">
-        <div class="process-step">
-          <div class="step-image"></div>
-          <h3 class="step-title">Initial Consultation</h3>
-          <p class="step-desc">Discuss your vision with our experts.</p>
-        </div>
-        <div class="process-step">
-          <div class="step-image"></div>
-          <h3 class="step-title">Design Consultation</h3>
-          <p class="step-desc">Finalize your design ideas with our team.</p>
-        </div>
-        <div class="process-step">
-          <div class="step-image"></div>
-          <h3 class="step-title">Design Approval</h3>
-          <p class="step-desc">Approve custom furniture designs.</p>
-        </div>
-        <div class="process-step">
-          <div class="step-image"></div>
-          <h3 class="step-title">Custom Production</h3>
-          <p class="step-desc">Your furniture crafted to perfection.</p>
-        </div>
-        <div class="process-step">
-          <div class="step-image"></div>
-          <h3 class="step-title">Delivery & Handover</h3>
-          <p class="step-desc">On-time delivery and project completion.</p>
-        </div>
-      </div>
-      <!--  -->
+
       <!-- Service Start -->
-      <div class="container-xxl py-5">
-        <div class="container">
+      <div id="Services" class="">
+        <div class="">
           <div
             class="text-center mx-auto mb-5 wow fadeInUp"
             data-wow-delay="0.1s"
-            style="max-width: 600px"
           >
             <h4 class="section-title">Our Services</h4>
             <h1 class="display-5 mb-4">
@@ -213,7 +184,7 @@
             </h1>
           </div>
           <div class="row g-4">
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+            <!-- <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
               <div
                 class="service-item d-flex position-relative text-center h-100"
               >
@@ -233,8 +204,8 @@
                   >
                 </div>
               </div>
-            </div>
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+            </div> -->
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
               <div
                 class="service-item d-flex position-relative text-center h-100"
               >
@@ -246,8 +217,8 @@
                   <img class="mb-4" src="img/icons/icon-6.png" alt="Icon" />
                   <h3 class="mb-3">3D Animation</h3>
                   <p class="mb-4">
-                    Erat ipsum justo amet duo et elitr dolor, est duo duo eos
-                    lorem sed diam stet diam sed stet.
+                    Visualize your dream space with stunning 3D animations that
+                    bring ideas to life.
                   </p>
                   <a class="btn" href="#"
                     ><i class="fa fa-plus me-3"></i>Read More</a
@@ -255,7 +226,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
               <div
                 class="service-item d-flex position-relative text-center h-100"
               >
@@ -265,10 +236,10 @@
                 ></div>
                 <div class="service-text p-5">
                   <img class="mb-4" src="img/icons/icon-7.png" alt="Icon" />
-                  <h3 class="mb-3">House Planning</h3>
+                  <h3 class="mb-3">Space Planning</h3>
                   <p class="mb-4">
-                    Erat ipsum justo amet duo et elitr dolor, est duo duo eos
-                    lorem sed diam stet diam sed stet.
+                    Maximize your space with smart, functional, and creative
+                    layouts.
                   </p>
                   <a class="btn" href="#"
                     ><i class="fa fa-plus me-3"></i>Read More</a
@@ -276,7 +247,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
               <div
                 class="service-item d-flex position-relative text-center h-100"
               >
@@ -288,8 +259,8 @@
                   <img class="mb-4" src="img/icons/icon-8.png" alt="Icon" />
                   <h3 class="mb-3">Interior Design</h3>
                   <p class="mb-4">
-                    Erat ipsum justo amet duo et elitr dolor, est duo duo eos
-                    lorem sed diam stet diam sed stet.
+                    Transform your interiors with designs tailored to your style
+                    and needs.
                   </p>
                   <a class="btn" href="#"
                     ><i class="fa fa-plus me-3"></i>Read More</a
@@ -297,7 +268,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
               <div
                 class="service-item d-flex position-relative text-center h-100"
               >
@@ -309,8 +280,8 @@
                   <img class="mb-4" src="img/icons/icon-9.png" alt="Icon" />
                   <h3 class="mb-3">Renovation</h3>
                   <p class="mb-4">
-                    Erat ipsum justo amet duo et elitr dolor, est duo duo eos
-                    lorem sed diam stet diam sed stet.
+                    Reimagine and rebuild your space into something
+                    extraordinary.
                   </p>
                   <a class="btn" href="#"
                     ><i class="fa fa-plus me-3"></i>Read More</a
@@ -318,7 +289,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+            <!-- <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
               <div
                 class="service-item d-flex position-relative text-center h-100"
               >
@@ -338,12 +309,44 @@
                   >
                 </div>
               </div>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
       <!-- Service End -->
-
+      <!-- projectRoute -->
+      <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s">
+        <h4 class="section-title">Our Services</h4>
+        <h1 class="display-5 mb-4">From Vision to Reality</h1>
+      </div>
+      <div class="process-container">
+        <div class="process-step">
+          <div class="step-image"></div>
+          <h3 class="step-title">Client Engagement</h3>
+          <p class="step-desc">Discuss your vision with our experts.</p>
+        </div>
+        <div class="process-step">
+          <div class="step-image"></div>
+          <h3 class="step-title">Design Development</h3>
+          <p class="step-desc">Finalize your design ideas with our team.</p>
+        </div>
+        <div class="process-step">
+          <div class="step-image"></div>
+          <h3 class="step-title">Design Approval</h3>
+          <p class="step-desc">Approve custom furniture designs.</p>
+        </div>
+        <div class="process-step">
+          <div class="step-image"></div>
+          <h3 class="step-title">Implementation</h3>
+          <p class="step-desc">Your furniture crafted to perfection.</p>
+        </div>
+        <div class="process-step">
+          <div class="step-image"></div>
+          <h3 class="step-title">Project Completion</h3>
+          <p class="step-desc">On-time delivery and project completion.</p>
+        </div>
+      </div>
+      <!--  -->
       <!-- Project Start -->
       <div class="project py-5">
         <div class="container">

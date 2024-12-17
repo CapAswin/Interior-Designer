@@ -684,7 +684,17 @@ h6,
   color: #777;
   height: 25px;
 }
-
+.highlights {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  border-radius: 10px;
+  border: 0.5px solid rgb(134 129 129 / 30%);
+}
+.highlights img {
+  border-radius: 5px;
+}
 @media (max-width: 768px) {
   .process-container {
     flex-direction: column;

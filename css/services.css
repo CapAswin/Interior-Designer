@@ -106,12 +106,19 @@
   transform: rotate(90deg);
 }
 #Services {
-  padding: 20px;
+  padding-top: 35px;
+}
+.row {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
 }
 /* Media Queries for Responsiveness */
 
 /* Extra Small Devices (Portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
+  .row {
+    padding: 20px;
+  }
   .container-xxl {
     padding: 30px 0;
   }
@@ -119,7 +126,9 @@
   .display-5 {
     font-size: 1.75rem;
   }
-
+  .step-desc {
+    display: none;
+  }
   .service-text {
     padding: 20px;
   }
@@ -139,6 +148,9 @@
 
 /* Small Devices (Landscape phones, 576px to 767px) */
 @media (min-width: 576px) and (max-width: 767.98px) {
+  .row {
+    padding: 20px;
+  }
   .container-xxl {
     padding: 40px 0;
   }
@@ -165,6 +177,9 @@
   .container-xxl {
     padding: 50px 0;
   }
+  .row {
+    padding: 20px;
+  }
 
   .display-5 {
     font-size: 2.25rem;
@@ -188,7 +203,9 @@
   .container-xxl {
     padding: 60px 0;
   }
-
+  #Services {
+    padding: 30px;
+  }
   .display-5 {
     font-size: 2.5rem;
   }
@@ -211,7 +228,9 @@
   .container-xxl {
     padding: 60px 0;
   }
-
+  #Services {
+    padding: 70px;
+  }
   .display-5 {
     font-size: 3rem;
   }

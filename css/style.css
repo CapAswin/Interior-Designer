@@ -281,12 +281,18 @@ body::-webkit-scrollbar-thumb:hover {
 .header.hidden {
   transform: translateY(-100%);
 }
+.header-top .logo h1 {
+  color: #7a543b;
+}
 .clr-wht a,
-.header-top .logo h1,
 .encircled,
 .icons-contact i {
   text-shadow: none !important;
   color: #000 !important;
+}
+.icons-contact a :hover,
+.clr-wht a :hover {
+  color: #7a543b !important;
 }
 .clr-wht i {
   color: #7a543b;
@@ -301,7 +307,7 @@ body::-webkit-scrollbar-thumb:hover {
   justify-content: space-between;
   height: 55px;
   border-bottom: 2px solid #7a543b;
-  background-color: rgb(0 63 57);
+  background-color: #003f39;
   width: 100%;
   color: #fff;
   padding: 0 20px;
@@ -326,6 +332,7 @@ body::-webkit-scrollbar-thumb:hover {
   display: flex;
   gap: 25px;
   margin: 0;
+  padding: 0;
 }
 #MainText {
   font-family: "AvenirBook", sans-serif;

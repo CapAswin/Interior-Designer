@@ -70,7 +70,11 @@
     display: none;
   }
 }
-
+@media (min-width: 768px) {
+  .big-devices {
+    display: none;
+  }
+}
 @media screen and (max-height: 450px) {
   .sidenav {
     padding-top: 15px;

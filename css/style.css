@@ -283,7 +283,8 @@ body::-webkit-scrollbar-thumb:hover {
 }
 .clr-wht a,
 .header-top .logo h1,
-.encircled {
+.encircled,
+.icons-contact i {
   text-shadow: none !important;
   color: #000 !important;
 }

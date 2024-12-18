@@ -31,6 +31,15 @@ drawer?.addEventListener("wheel", (e) => {
   e.preventDefault();
   e.stopPropagation();
 });
+backdrop?.addEventListener("touchmove", (e) => {
+  e.preventDefault();
+  e.stopPropagation();
+});
+drawer?.addEventListener("touchmove", (e) => {
+  e.preventDefault();
+  e.stopPropagation();
+});
+
 function openNav(e) {
   backdrop?.classList?.toggle("active");
   document.getElementById("mySidenav").style.width = "250px";
@@ -144,4 +153,22 @@ document.addEventListener("DOMContentLoaded", function () {
       format: "dd/mm/yyyy",
       todayHighlight: true,
     });
+});
+
+// header logic
+
+const header1 = document.getElementById("header1");
+const header2 = document.getElementById("header");
+const triggerHeight = window.innerHeight;
+
+window.addEventListener("scroll", () => {
+  const scrollPosition = window.scrollY;
+
+  if (scrollPosition >= triggerHeight) {
+    header1.classList.add("hidden");
+    header2.classList.remove("hidden");
+  } else {
+    header1.classList.remove("hidden");
+    header2.classList.add("hidden");
+  }
 });

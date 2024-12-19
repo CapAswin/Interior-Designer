@@ -239,6 +239,14 @@ body::-webkit-scrollbar-thumb:hover {
     border-right: 1px solid #000; /* Add your desired border style */
   }
 }
+@media (max-width: 600px) {
+  /* Styles for mobile devices */
+  .waves {
+    bottom: -85px !important;
+    left: 15px !important;
+    scale: 0.9 !important;
+  }
+}
 
 @media (min-width: 992px) {
   .col-lg-4 {

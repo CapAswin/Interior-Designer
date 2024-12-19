@@ -265,6 +265,19 @@ body::-webkit-scrollbar-thumb:hover {
     font-size: 25px !important;
   }
 }
+@media (min-width: 1024px) and (max-width: 1440px) {
+  /* Styles for laptops */
+  .waves {
+    bottom: -190px !important;
+  }
+  #MainText h1 {
+    font-size: 40px;
+  }
+  #MainText p {
+    font-size: 22px !important;
+  }
+}
+
 @media (max-width: 768px) {
   #FirstHeader h1 {
     font-size: 50px !important;
@@ -365,6 +378,38 @@ body::-webkit-scrollbar-thumb:hover {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 1.5);
   bottom: 0%;
   position: absolute;
+  display: flex;
+  width: 100%;
+  justify-content: end;
+}
+.contact-info-mainText {
+  /* right: 0%; */
+  /* position: relative; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  background-color: rgba(105 96 96 / 50%);
+  /* background-color: transparent; */
+  border-radius: 50px;
+  border: 0.5px solid rgba(255, 255, 255, 0.3);
+}
+.contact-info-mainText p {
+  gap: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+.contact-info-mainText a {
+  color: #003f39;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
 }
 #MainText p {
   font-size: 25px;

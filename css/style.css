@@ -253,7 +253,7 @@ body::-webkit-scrollbar-thumb:hover {
     width: 33.3333%;
   }
 }
-@media (min-width: 600px) and (max-width: 900px) {
+@media (min-width: 600px) and (max-width: 920px) {
   /* Styles for tablets */
   .waves {
     bottom: 110px !important;

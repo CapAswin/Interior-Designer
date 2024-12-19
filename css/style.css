@@ -258,7 +258,7 @@ body::-webkit-scrollbar-thumb:hover {
   .waves {
     bottom: 110px !important;
   }
-  #FirstHeader h1 {
+  #FirstHeader span {
     font-size: 60px !important;
   }
   #FirstHeader a {
@@ -279,7 +279,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 @media (max-width: 768px) {
-  #FirstHeader h1 {
+  #FirstHeader span {
     font-size: 50px !important;
   }
   #FirstHeader a {
@@ -448,7 +448,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 #Landingimg {
   /* background-image: url("/images/interior01.webp"); */
-  background-image: url("../images/back1.jpg");
+  background: url("../images/back1.jpg");
   /* background-image: url("/images/back.webp"); */
   /* background-image: url("/images/hero-bg.w
     ebp"); */
@@ -495,6 +495,8 @@ body::-webkit-scrollbar-thumb:hover {
   color: #fff;
   height: 100dvh;
   text-align: center;
+  background-color: rgba(96, 117, 98, 0.5);
+  /* to takeoff */
 }
 
 .hero h2 {

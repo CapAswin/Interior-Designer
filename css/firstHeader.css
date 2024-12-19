@@ -1,13 +1,13 @@
-#FirstHeader h1 {
+#FirstHeader span {
   display: flex;
   justify-content: center;
   align-items: start;
-  font-size: 110px;
+  font-size: 100px;
   transform: translateY(50px);
   opacity: 0;
   filter: blur(30px);
   animation: textEffect 1s linear 1 forwards;
-  /* color: #003f39; */
+  color: #af9d71;
 }
 @keyframes textEffect {
   to {
@@ -15,6 +15,9 @@
     filter: blur(0);
     transform: translateY(0px);
   }
+}
+.boldClass {
+  font-weight: 700;
 }
 .FheaderNav a {
   color: #003f39;

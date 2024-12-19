@@ -156,19 +156,18 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // header logic
-
-const header1 = document.getElementById("header1");
-const header2 = document.getElementById("header");
+const header1 = document.getElementById("header");
+header1.classList.add("hidden");
+// const header2 = document.getElementById("header1");
 const triggerHeight = window.innerHeight;
 
 window.addEventListener("scroll", () => {
   const scrollPosition = window.scrollY;
-
   if (scrollPosition >= triggerHeight) {
-    header1.classList.add("hidden");
-    header2.classList.remove("hidden");
-  } else {
     header1.classList.remove("hidden");
-    header2.classList.add("hidden");
+    // header2.classList.remove("hidden");
+  } else {
+    header1.classList.add("hidden");
+    // header2.classList.add("hidden");
   }
 });

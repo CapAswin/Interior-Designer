@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./css/card.css" />
     <link rel="stylesheet" href="./css/footer.css" />
     <link rel="stylesheet" href="./css/services.css" />
+    <link rel="stylesheet" href="./css/firstHeader.css" />
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/bootstrap.min.css" rel="stylesheet" />
 
@@ -72,90 +73,6 @@
       <!-- Spinner End -->
 
       <!-- heared start -->
-      <div id="header1" class="header">
-        <div class="header-top">
-          <!-- Logo -->
-          <div class="logo">
-            <a href="#"><h1>TeakRoom</h1></a>
-          </div>
-          <!-- Contact Info -->
-          <div class="contact-info clr-wht phone-number">
-            <a class="btn-primary1" href="tel:+919745093516">
-              <i class="fa fa-phone-alt"></i>
-              <span class="phone-number">+91 974 5093 516</span>
-            </a>
-            <a
-              class="btn-primary1"
-              href="https://mail.google.com/mail/?view=cm&fs=1&to=contact@trikayainteriors.com&su=Interior%20Design%20Inquiry&body=Hello%20Trikaya%20Interiors,%0D%0A%0D%0AI%20am%20interested%20in%20your%20interior%20design%20services.%20Please%20provide%20me%20with%20more%20information.%0D%0A%0D%0AThank%20you!%0D%0A"
-              target="_blank"
-            >
-              <i class="fas fa-envelope"></i>
-              <span class="phone-number">youremail@domain.com</span>
-            </a>
-            <a
-              href="https://www.google.com/maps?q=First+floor,+A2+Tower,+opposite+Teak+Museum,+Nilambur,+Kerala+679329"
-              target="_blank"
-              class="btn-primary1 address-shown"
-            >
-              <i class="fas fa-map-marker-alt"></i>
-              <span class="phone-number"
-                >First floor, A2 Tower, opposite Teak Museum, Nilambur, Kerala
-                679329</span
-              >
-            </a>
-          </div>
-          <!-- SOCIAL MEDIAS -->
-          <div class="icons-contact">
-            <!-- big-devices -->
-            <a class="btn-primary1 big-devices" href="tel:+919745093516">
-              <i class="fa fa-phone-alt"></i>
-            </a>
-            <a
-              class="btn-primary1 big-devices"
-              href="https://mail.google.com/mail/?view=cm&fs=1&to=contact@trikayainteriors.com&su=Interior%20Design%20Inquiry&body=Hello%20Trikaya%20Interiors,%0D%0A%0D%0AI%20am%20interested%20in%20your%20interior%20design%20services.%20Please%20provide%20me%20with%20more%20information.%0D%0A%0D%0AThank%20you!%0D%0A"
-              target="_blank"
-            >
-              <i class="fas fa-envelope"></i>
-            </a>
-            <a
-              href="https://www.google.com/maps?q=First+floor,+A2+Tower,+opposite+Teak+Museum,+Nilambur,+Kerala+679329"
-              target="_blank"
-              class="btn-primary1 big-devices address-shown"
-            >
-              <i class="fas fa-map-marker-alt"></i>
-            </a>
-            <a
-              class="btn-primary1 encircled"
-              href="https://www.facebook.com/yourfacebookid"
-              target="_blank"
-              ><i class="fab fa-facebook-f"></i
-            ></a>
-            <a
-              class="btn-primary1"
-              href="https://wa.me/919745093516"
-              target="_blank"
-            >
-              <i class="fab fa-whatsapp"></i>
-            </a>
-            <a
-              class="btn-primary1 encircled"
-              href="https://www.instagram.com//rahulmenakath"
-              target="_blank"
-              ><i class="fab fa-instagram"></i
-            ></a>
-          </div>
-        </div>
-        <div class="header-bottom-container">
-          <div class="header-bottom">
-            <ul>
-              <li><a href="#" onclick="closeNav(event)">About</a></li>
-              <li><a href="./html/projects.html">Projects</a></li>
-              <li><a href="#" onclick="toServices(event)">Services</a></li>
-              <li><a href="#" onclick="toAppointment(event)">Contact</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
       <header id="header" class="header">
         <div class="container">
           <div class="logo">
@@ -213,39 +130,59 @@
 
       <!-- landing-1 -->
       <div id="Landingimg">
-        <!-- drawer -->
-        <div id="mySidenav" class="sidenav">
-          <div class="drawer-content">
-            <a
-              href="javascript:void(0)"
-              class="closebtn"
-              onclick="closeNav(event)"
-              >&times;</a
-            >
-            <div class="sidenavContent">
-              <a href="#" onclick="closeNav(event)">About</a>
-              <a href="#" onclick="toServices(event)">Services</a>
-              <a href="./html/projects.html">Projects</a>
-              <a href="#">Clients</a>
-              <a href="#" onclick="toAppointment(event)">Contact</a>
-              <div class="sideNavFooter">
-                <p>2201 old court rd,<br />pikesville, md 21208</p>
-                <p>
-                  <a href="mailto:youremail@domain.com">youremail@domain.com</a>
-                </p>
-                <p>
-                  <a class="btn-primary2" href="tel:+919745093516">
-                    <i class="fa fa-phone-alt"></i>
-                    <span>+91 974 5093 516</span>
-                  </a>
-                </p>
+        <section class="hero">
+          <div id="FirstHeader">
+            <div class="plusIndexZ">
+              <h1>TeakRoom</h1>
+              <div class="d-flex justify-content-around gap-4 FheaderNav">
+                <div><a href="./html/projects.html">Projects</a></div>
+                <div><a href="#" onclick="toServices(event)">Services</a></div>
+                <div>
+                  <a href="#" onclick="toAppointment(event)">Contact</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="waves">
+              <div class="wave a"></div>
+              <div class="wave b"></div>
+              <div class="wave c"></div>
+            </div>
+          </div>
+          <!-- drawer -->
+          <div id="mySidenav" class="sidenav">
+            <div class="drawer-content">
+              <a
+                href="javascript:void(0)"
+                class="closebtn"
+                onclick="closeNav(event)"
+                >&times;</a
+              >
+              <div class="sidenavContent">
+                <a href="#" onclick="closeNav(event)">About</a>
+                <a href="#" onclick="toServices(event)">Services</a>
+                <a href="./html/projects.html">Projects</a>
+                <a href="#">Clients</a>
+                <a href="#" onclick="toAppointment(event)">Contact</a>
+                <div class="sideNavFooter">
+                  <p>2201 old court rd,<br />pikesville, md 21208</p>
+                  <p>
+                    <a href="mailto:youremail@domain.com"
+                      >youremail@domain.com</a
+                    >
+                  </p>
+                  <p>
+                    <a class="btn-primary2" href="tel:+919745093516">
+                      <i class="fa fa-phone-alt"></i>
+                      <span>+91 974 5093 516</span>
+                    </a>
+                  </p>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <!-- drawerend -->
-        <!-- end-1 -->
-        <section class="hero">
+          <!-- drawerend -->
+          <!-- end-1 -->
           <div class="Center">
             <div id="MainText" class="container">
               <h1>Find your perfect home</h1>

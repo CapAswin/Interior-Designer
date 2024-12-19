@@ -19,11 +19,6 @@
 .FheaderNav a {
   color: #003f39;
 }
-.FheaderNav hr {
-  transform: rotate(90deg);
-  width: 50px;
-  height: 2px;
-}
 .plusIndexZ {
   position: relative;
   z-index: 99;

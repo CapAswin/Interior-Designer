@@ -235,6 +235,9 @@ body::-webkit-scrollbar-thumb:hover {
   .col-md-6 {
     width: 50%;
   }
+  #btns-services {
+    border-right: 1px solid #000; /* Add your desired border style */
+  }
 }
 
 @media (min-width: 992px) {
@@ -242,9 +245,24 @@ body::-webkit-scrollbar-thumb:hover {
     width: 33.3333%;
   }
 }
-@media (min-width: 768px) {
-  #btns-services {
-    border-right: 1px solid #000; /* Add your desired border style */
+@media (min-width: 600px) and (max-width: 900px) {
+  /* Styles for tablets */
+  .waves {
+    bottom: 110px !important;
+  }
+  #FirstHeader h1 {
+    font-size: 60px !important;
+  }
+  #FirstHeader a {
+    font-size: 25px !important;
+  }
+}
+@media (max-width: 768px) {
+  #FirstHeader h1 {
+    font-size: 50px !important;
+  }
+  #FirstHeader a {
+    font-size: 20px !important;
   }
 }
 

@@ -8,6 +8,7 @@
   filter: blur(30px);
   animation: textEffect 1s linear 1 forwards;
   color: #af9d71;
+  text-shadow: 2px 2px 4px rgba(4, 4, 4, 0.5);
 }
 @keyframes textEffect {
   to {

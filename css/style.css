@@ -495,7 +495,7 @@ body::-webkit-scrollbar-thumb:hover {
   color: #fff;
   height: 100dvh;
   text-align: center;
-  background-color: rgba(96, 117, 98, 0.5);
+  background-color: rgb(38 61 40 / 50%);
   /* to takeoff */
 }
 

@@ -236,7 +236,7 @@ body::-webkit-scrollbar-thumb:hover {
     width: 50%;
   }
   #btns-services {
-    border-right: 1px solid #000; /* Add your desired border style */
+    border-right: 1px solid #000;
   }
 }
 @media (max-width: 600px) {
@@ -253,9 +253,7 @@ body::-webkit-scrollbar-thumb:hover {
     width: 33.3333%;
   }
 }
-/* For iPhone 14 Pro and similar resolutions */
 @media only screen and (min-width: 390px) and (max-width: 599px) {
-  /* Your styles here */
   .waves {
     bottom: -20px !important;
   }
@@ -308,6 +306,11 @@ body::-webkit-scrollbar-thumb:hover {
     font-size: 22px !important;
   }
 }
+@media (min-width: 1440px) {
+  .waves {
+    bottom: -90px !important;
+  }
+}
 @media (max-width: 768px) {
   #FirstHeader span {
     font-size: 50px !important;
@@ -324,7 +327,6 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 #header {
-  /* background-color: #fff; */
   margin: 0;
   position: fixed;
   width: 100%;
@@ -437,7 +439,8 @@ body::-webkit-scrollbar-thumb:hover {
   width: 45px;
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
-  background-color: rgb(193 171 171 / 12%);
+  background-color: rgba(105 96 96 / 50%);
+  /* background-color: rgb(193 171 171 / 12%); */
   /* background-color: transparent; */
   border-radius: 50%;
   border: 0.5px solid rgba(255, 255, 255, 0.3);
@@ -448,7 +451,8 @@ body::-webkit-scrollbar-thumb:hover {
   align-items: center;
 }
 .contact-info-mainText p a:hover {
-  background-color: rgba(105 96 96 / 50%) !important;
+  background-color: rgb(255 255 255 / 25%) !important;
+  /* background-color: rgba(105 96 96 / 50%) !important; */
   border: 0.5px solid #2a443b !important;
   color: #003f39 !important;
 }

@@ -408,7 +408,7 @@ body::-webkit-scrollbar-thumb:hover {
   margin: 0;
 }
 .contact-info-mainText a {
-  color: #003f39;
+  /* color: #003f39; */
   display: flex;
   gap: 20px;
   justify-content: center;

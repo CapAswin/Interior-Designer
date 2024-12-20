@@ -21,6 +21,7 @@
   font-weight: 700;
 }
 .FheaderNav a {
+  text-shadow: 2px 2px 4px rgba(4, 4, 4, 0.5);
   color: #003f39;
 }
 .plusIndexZ {

@@ -272,10 +272,10 @@ body::-webkit-scrollbar-thumb:hover {
     font-size: 25px !important;
   }
 }
-@media (min-width: 1024px) and (max-width: 1440px) {
+@media (min-width: 1025px) and (max-width: 1100px) {
   /* Styles for laptops */
   .waves {
-    bottom: -190px !important;
+    bottom: 90px !important;
   }
   #MainText h1 {
     font-size: 40px;
@@ -284,7 +284,30 @@ body::-webkit-scrollbar-thumb:hover {
     font-size: 22px !important;
   }
 }
-
+@media (min-width: 1101px) and (max-width: 1360px) {
+  /* Styles for laptops */
+  .waves {
+    bottom: -90px !important;
+  }
+  #MainText h1 {
+    font-size: 40px;
+  }
+  #MainText p {
+    font-size: 22px !important;
+  }
+}
+@media (min-width: 1361px) and (max-width: 1440px) {
+  /* Styles for laptops */
+  .waves {
+    bottom: -50px !important;
+  }
+  #MainText h1 {
+    font-size: 40px;
+  }
+  #MainText p {
+    font-size: 22px !important;
+  }
+}
 @media (max-width: 768px) {
   #FirstHeader span {
     font-size: 50px !important;

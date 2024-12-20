@@ -32,7 +32,7 @@
   scale: 1.1;
   position: absolute;
   height: 527px;
-  bottom: -95px;
+  bottom: 100px;
   width: 100%;
   transform: rotate(180deg);
 }

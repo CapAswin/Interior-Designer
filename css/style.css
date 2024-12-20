@@ -253,6 +253,13 @@ body::-webkit-scrollbar-thumb:hover {
     width: 33.3333%;
   }
 }
+/* For iPhone 14 Pro and similar resolutions */
+@media only screen and (min-width: 390px) and (max-width: 599px) {
+  /* Your styles here */
+  .waves {
+    bottom: -20px !important;
+  }
+}
 @media (min-width: 600px) and (max-width: 920px) {
   /* Styles for tablets */
   .waves {

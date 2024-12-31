@@ -1,3 +1,10 @@
+.logoMain {
+  height: 145px;
+  border-radius: 15px;
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+}
 #FirstHeader span {
   display: flex;
   justify-content: center;
@@ -31,8 +38,9 @@
 .waves {
   scale: 1.1;
   position: absolute;
+  top: 0;
   height: 527px;
-  bottom: 100px;
+  /* bottom: 100px; */
   width: 100%;
   transform: rotate(180deg);
 }
@@ -47,14 +55,15 @@
   overflow: hidden;
 }
 .wave {
+  scale: 1.1;
   width: 2402px;
   height: 427px;
   background: url("https://static.platzi.com/media/files/waves_c8551f5d-ecf6-4a81-ae1d-f3a0ad55ba10.png")
     no-repeat center bottom;
   position: absolute;
   animation: wave 5s ease-in-out alternate infinite;
-  left: -180px;
-  bottom: -85px;
+  left: -350px;
+  bottom: -200px;
 }
 .wave.a {
   background-position: 0 -854px;

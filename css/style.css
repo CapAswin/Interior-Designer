@@ -894,4 +894,7 @@ h6,
   .process-step {
     width: 100%;
   }
+  .logoMain {
+    height: 80px !important;
+  }
 }

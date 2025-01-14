@@ -141,32 +141,53 @@ const data = [
   },
 ];
 const parentGallery = document.getElementById("bodyForProject");
-let eachImg = (item, gallery) => {
+const eachImg = (item, gallery) => {
   item.imgs.forEach((e) => {
     const card = document.createElement("li");
+    card.className = "cards";
+    // Modal creation
     const modal = document.createElement("div");
     modal.className = "modal";
-    modal.style.display = "flex";
+    modal.style.display = "none"; // Initially hidden
+
     const modalImg = document.createElement("img");
     modalImg.src = e.path;
+    modalImg.className = "modal-img";
+
     const closeModalBtn = document.createElement("a");
     closeModalBtn.className = "closeModalBtn";
     closeModalBtn.innerHTML = "&times;";
+
     modal.append(modalImg, closeModalBtn);
-    modal?.addEventListener("wheel", (e) => {
+
+    // Prevent scrolling when modal is open
+    modal.addEventListener("wheel", (e) => {
       e.preventDefault();
       e.stopPropagation();
     });
+
+    // Add modal open and close animations
     card.onclick = () => {
       parentGallery.appendChild(modal);
+      modal.style.display = "flex";
+      modal.classList.add("fade-in");
+      modal.classList.remove("fade-out");
     };
+
     closeModalBtn.onclick = () => {
-      parentGallery.removeChild(modal);
+      modal.classList.add("fade-out");
+      modal.classList.remove("fade-in");
+      setTimeout(() => {
+        modal.style.display = "none";
+        parentGallery.removeChild(modal);
+      }, 300); // Matches the animation duration
     };
+
     // Create and append an image
     const img = document.createElement("img");
     img.className = "hover-effect";
     img.src = e.path;
+    img.loading = "lazy";
     card.appendChild(img);
 
     // Create and append a description
@@ -178,6 +199,7 @@ let eachImg = (item, gallery) => {
     gallery.appendChild(card);
   });
 };
+
 let imageInitial = (click, item) => {
   const imageContainer = document.createElement("div");
   imageContainer.className = "image-container";
@@ -227,7 +249,7 @@ let arrayOfData = async () => {
         const abc = () => eachImg(item, listUl);
         imageInitial(abc, item);
       }
-
+      listUl.className = "list-ul";
       // Append the category container to the parent gallery
       parentGallery.append(categoryContainer, listUl);
     }

@@ -863,6 +863,13 @@ h6,
   margin-bottom: 10px;
 }
 
+.step-image img {
+  width: 100%; /* Ensures the image covers the width */
+  height: 100%; /* Ensures the image covers the height */
+  object-fit: cover; /* Scales image to fill the div while cropping excess */
+  object-position: center;
+  image-rendering: auto;
+}
 .step-title {
   font-size: 1.2em;
   margin-bottom: 10px;

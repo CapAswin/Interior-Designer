@@ -869,6 +869,7 @@ h6,
   object-fit: cover; /* Scales image to fill the div while cropping excess */
   object-position: center;
   image-rendering: auto;
+  border-radius: 8px;
 }
 .step-title {
   font-size: 1.2em;

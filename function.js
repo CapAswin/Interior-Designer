@@ -173,32 +173,46 @@ window.addEventListener("scroll", () => {
 });
 
 //mail
+const btn = document.getElementById("contactUs_btn");
+
 document
   .getElementById("appointmentForm")
-  .addEventListener("submit", async function (e) {
-    e.preventDefault();
+  .addEventListener("submit", function (event) {
+    event.preventDefault();
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const mobile = document.getElementById("mobile").value;
+    const service = document.getElementById("service").value;
+    const date = document.getElementById("date").value;
+    const time = document.getElementById("time").value;
+    const message = document.getElementById("message").value;
 
-    // Gather form data
-    const data = {
-      name: document.getElementById("name").value,
-      email: document.getElementById("email").value,
-      mobile: document.getElementById("mobile").value,
-      service: document.getElementById("service").value,
-      date: document.getElementById("date").value,
-      time: document.getElementById("time").value,
-      message: document.getElementById("message").value,
+    // Prepare the email data
+    const templateParams = {
+      name: name,
+      email: email,
+      mobile: mobile,
+      service: service,
+      date: date,
+      time: time,
+      message: message,
     };
 
-    // POST data to Apps Script
-    const response = await fetch(
-      "https://script.google.com/macros/s/AKfycbzqxmMqo9mJ9Kpwn9RmJzFhycjNQitrMMBlWJESgR0wWsvPu4hrkf2LcVZl2JCw8Xr8gQ/exec",
-      {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(data),
+    btn.value = "Sending..."; // Change button text to indicate email is being sent
+
+    const serviceID = "service_3u1ygwb";
+    const templateID = "template_l8xnaaf";
+
+    // Send email using EmailJS
+    emailjs.send(serviceID, templateID, templateParams).then(
+      () => {
+        btn.value = "Send Email"; // Reset the button text
+        alert("Your appointment has been sent!");
+        document.getElementById("appointmentForm").reset(); // Reset form after successful submission
+      },
+      (err) => {
+        btn.value = "Send Email"; // Reset the button text in case of error
+        alert("Error sending email: " + JSON.stringify(err));
       }
     );
-
-    const result = await response.json();
-    alert(result.message);
   });

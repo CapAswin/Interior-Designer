@@ -171,3 +171,34 @@ window.addEventListener("scroll", () => {
     // header2.classList.add("hidden");
   }
 });
+
+//mail
+document
+  .getElementById("appointmentForm")
+  .addEventListener("submit", async function (e) {
+    e.preventDefault();
+
+    // Gather form data
+    const data = {
+      name: document.getElementById("name").value,
+      email: document.getElementById("email").value,
+      mobile: document.getElementById("mobile").value,
+      service: document.getElementById("service").value,
+      date: document.getElementById("date").value,
+      time: document.getElementById("time").value,
+      message: document.getElementById("message").value,
+    };
+
+    // POST data to Apps Script
+    const response = await fetch(
+      "https://script.google.com/macros/s/AKfycbzqxmMqo9mJ9Kpwn9RmJzFhycjNQitrMMBlWJESgR0wWsvPu4hrkf2LcVZl2JCw8Xr8gQ/exec",
+      {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      }
+    );
+
+    const result = await response.json();
+    alert(result.message);
+  });

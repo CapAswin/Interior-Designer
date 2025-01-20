@@ -534,83 +534,90 @@
               </div>
             </div>
             <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
-              <div class="row g-3">
-                <div class="col-12 col-sm-6">
-                  <input
-                    type="text"
-                    class="form-control"
-                    placeholder="Your Name"
-                    style="height: 55px"
-                  />
-                </div>
-                <div class="col-12 col-sm-6">
-                  <input
-                    type="email"
-                    class="form-control"
-                    placeholder="Your Email"
-                    style="height: 55px"
-                  />
-                </div>
-                <div class="col-12 col-sm-6">
-                  <input
-                    type="text"
-                    class="form-control"
-                    placeholder="Your Mobile"
-                    style="height: 55px"
-                  />
-                </div>
-                <div class="col-12 col-sm-6">
-                  <select
-                    class="form-select"
-                    style="height: 55px; margin: 0.5rem 0"
-                  >
-                    <option selected>Choose Service</option>
-                    <option value="1">Service 1</option>
-                    <option value="2">Service 2</option>
-                    <option value="3">Service 3</option>
-                  </select>
-                </div>
-                <div class="col-12 col-sm-6">
-                  <div class="date" id="date" data-target-input="nearest">
+              <form id="appointmentForm">
+                <div class="row g-3">
+                  <div class="col-12 col-sm-6">
                     <input
                       type="text"
-                      class="form-control datetimepicker-input"
-                      id="datepicker"
-                      placeholder="Choose Date"
+                      id="name"
+                      class="form-control"
+                      placeholder="Your Name"
                       style="height: 55px"
+                      required
                     />
                   </div>
-                </div>
-                <div class="col-12 col-sm-6">
-                  <div class="time" id="time" data-target-input="nearest">
+                  <div class="col-12 col-sm-6">
+                    <input
+                      type="email"
+                      id="email"
+                      class="form-control"
+                      placeholder="Your Email"
+                      style="height: 55px"
+                      required
+                    />
+                  </div>
+                  <div class="col-12 col-sm-6">
+                    <input
+                      type="text"
+                      id="mobile"
+                      class="form-control"
+                      placeholder="Your Mobile"
+                      style="height: 55px"
+                      required
+                    />
+                  </div>
+                  <div class="col-12 col-sm-6">
+                    <select
+                      id="service"
+                      class="form-select"
+                      style="height: 55px; margin: 0.5rem 0"
+                      required
+                    >
+                      <option value="" selected disabled>Choose Service</option>
+                      <option value="Service 1">Service 1</option>
+                      <option value="Service 2">Service 2</option>
+                      <option value="Service 3">Service 3</option>
+                    </select>
+                  </div>
+                  <div class="col-12 col-sm-6">
+                    <input
+                      type="date"
+                      id="date"
+                      class="form-control"
+                      style="height: 55px"
+                      required
+                    />
+                  </div>
+                  <div class="col-12 col-sm-6">
                     <input
                       type="time"
+                      id="time"
                       class="form-control"
-                      id="timepicker"
-                      placeholder="Choose Date"
                       style="height: 55px"
+                      required
                     />
                   </div>
+                  <div class="col-12">
+                    <textarea
+                      id="message"
+                      class="form-control"
+                      rows="5"
+                      placeholder="Message"
+                      required
+                    ></textarea>
+                  </div>
+                  <div class="col-12">
+                    <button class="btn btn-primary w-100 py-3" type="submit">
+                      Book Appointment
+                    </button>
+                  </div>
                 </div>
-                <div class="col-12">
-                  <textarea
-                    class="form-control"
-                    rows="5"
-                    placeholder="Message"
-                  ></textarea>
-                </div>
-                <div class="col-12">
-                  <button class="btn btn-primary w-100 py-3" type="submit">
-                    Book Appointment
-                  </button>
-                </div>
-              </div>
+              </form>
             </div>
           </div>
         </div>
       </div>
       <!-- Appointment End -->
-
       <footer class="custom-footer">
         <h1 style="font-family: 'Playfair Display', serif">Contact</h1>
         <p>

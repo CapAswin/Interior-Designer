@@ -534,13 +534,13 @@
               </div>
             </div>
             <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
-              <!-- <form id="appointmentForm"> -->
-              <form id="contactForm">
+              <form method="post" action="" name="contact-form">
                 <div class="row g-3">
                   <div class="col-12 col-sm-6">
                     <input
                       type="text"
                       id="name"
+                      name="Name"
                       class="form-control"
                       placeholder="Your Name"
                       style="height: 55px"
@@ -551,6 +551,7 @@
                     <input
                       type="email"
                       id="email"
+                      name="Mail"
                       class="form-control"
                       placeholder="Your Email"
                       style="height: 55px"
@@ -561,6 +562,7 @@
                     <input
                       type="text"
                       id="mobile"
+                      name="Phone"
                       class="form-control"
                       placeholder="Your Mobile"
                       style="height: 55px"
@@ -570,6 +572,7 @@
                   <div class="col-12 col-sm-6">
                     <select
                       id="service"
+                      name="Service"
                       class="form-select"
                       style="height: 55px; margin: 0.5rem 0"
                       required
@@ -585,6 +588,7 @@
                     <input
                       type="date"
                       id="date"
+                      name="Date"
                       class="form-control"
                       style="height: 55px"
                       required
@@ -594,6 +598,7 @@
                     <input
                       type="time"
                       id="time"
+                      name="Time"
                       class="form-control"
                       style="height: 55px"
                       required
@@ -602,6 +607,7 @@
                   <div class="col-12">
                     <textarea
                       id="message"
+                      name="Message"
                       class="form-control"
                       rows="5"
                       placeholder="Message"
@@ -609,12 +615,19 @@
                     ></textarea>
                   </div>
                   <div class="col-12">
-                    <button
+                    <input
+                      class="btn btn-primary w-100 py-3"
+                      id="contactUs_btn"
+                      type="submit"
+                      value="Book Appointment"
+                      id="submit"
+                    />
+                    <!-- <button
                       onclick="sendEmail()"
                       class="btn btn-primary w-100 py-3"
                       id="contactUs_btn"
                       type="submit"
-                    >
+                    > -->
                       Book Appointment
                     </button>
                   </div>

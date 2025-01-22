@@ -218,12 +218,12 @@ document.getElementById("contactForm").addEventListener("submit", async (e) => {
     </html>
   `;
 
-  const emailData = {
-    sender: { name: data.name, email: "aswinjocker@gmail.com" }, // Sender's email
-    to: [{ email: "admin@teakroom.in", name: "Admin Teakroom" }], // Recipient's email
-    subject: "New Appointment Request",
-    htmlContent: mailTemplate, // Custom HTML content
-  };
+  // const emailData = {
+  //   sender: { name: data.name, email: "aswinjocker@gmail.com" }, // Sender's email
+  //   to: [{ email: "admin@teakroom.in", name: "Admin Teakroom" }], // Recipient's email
+  //   subject: "New Appointment Request",
+  //   htmlContent: mailTemplate, // Custom HTML content
+  // };
 
   try {
     const response = await fetch("https://api.brevo.com/v3/smtp/email", {
@@ -232,7 +232,7 @@ document.getElementById("contactForm").addEventListener("submit", async (e) => {
         "Content-Type": "application/json",
         // "api-key": BREVO_API_KEY,
       },
-      body: JSON.stringify(emailData),
+      // body: JSON.stringify(emailData),
     });
 
     if (response.ok) {

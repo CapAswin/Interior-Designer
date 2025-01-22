@@ -173,7 +173,7 @@ window.addEventListener("scroll", () => {
 });
 
 //mail
-const BREVO_API_KEY =
+const BREVO_kkkey =
   "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"; // Replace with your actual API key
 
 document.getElementById("contactForm").addEventListener("submit", async (e) => {
@@ -230,7 +230,7 @@ document.getElementById("contactForm").addEventListener("submit", async (e) => {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        "api-key": BREVO_API_KEY,
+        "api-key": BREVO_kkkey,
       },
       body: JSON.stringify(emailData),
     });

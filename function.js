@@ -173,51 +173,6 @@ window.addEventListener("scroll", () => {
 });
 
 //mail
-// const btn = document.getElementById("contactUs_btn");
-
-// document
-//   .getElementById("appointmentForm")
-//   .addEventListener("submit", function (event) {
-//     event.preventDefault();
-//     const name = document.getElementById("name").value;
-//     const email = document.getElementById("email").value;
-//     const mobile = document.getElementById("mobile").value;
-//     const service = document.getElementById("service").value;
-//     const date = document.getElementById("date").value;
-//     const time = document.getElementById("time").value;
-//     const message = document.getElementById("message").value;
-
-//     // Prepare the email data
-//     const templateParams = {
-//       name: name,
-//       email: email,
-//       mobile: mobile,
-//       service: service,
-//       date: date,
-//       time: time,
-//       message: message,
-//     };
-
-//     btn.value = "Sending..."; // Change button text to indicate email is being sent
-
-//     const serviceID = "service_3u1ygwb";
-//     const templateID = "template_l8xnaaf";
-
-//     // Send email using EmailJS
-//     emailjs.send(serviceID, templateID, templateParams).then(
-//       () => {
-//         btn.value = "Send Email"; // Reset the button text
-//         alert("Your appointment has been sent!");
-//         document.getElementById("appointmentForm").reset(); // Reset form after successful submission
-//       },
-//       (err) => {
-//         btn.value = "Send Email"; // Reset the button text in case of error
-//         alert("Error sending email: " + JSON.stringify(err));
-//       }
-//     );
-//   });
-
-//mail
 const BREVO_API_KEY = "123";
 // "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"; // Replace with your actual API key
 

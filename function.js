@@ -275,7 +275,7 @@ document.getElementById("contactForm").addEventListener("submit", async (e) => {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        "api-key": BREVO_API_KEY,
+        // "api-key": BREVO_API_KEY,
       },
       body: JSON.stringify(emailData),
     });

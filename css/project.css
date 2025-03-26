@@ -13,10 +13,18 @@ body {
   /* height: 200dvh; */
   transition: height 0.2s ease;
 }
-.bodyForProject h1,
+
 #header h1,
 #header a {
   color: white;
+}
+.bodyForProject h1 {
+  font-size: 28px;
+  color: #b1a5a5;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
 }
 #bodyForProject ul {
   gap: 20px;

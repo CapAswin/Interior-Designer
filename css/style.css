@@ -906,3 +906,33 @@ h6,
     height: 80px !important;
   }
 }
+ #snackbar {
+      display: none;
+      position: fixed;
+      top: -100px; /* Initially positioned above the screen */
+      left: 50%;
+      transform: translateX(-50%);
+      min-width: 300px;
+      background-color: #28a745;
+      color: white;
+      padding: 16px;
+      border-radius: 4px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+      z-index: 9999;
+      opacity: 0; /* Initially hidden */
+      transition: transform 0.5s ease, opacity 0.5s ease; /* Animate both slide and fade */
+    }
+    #snackbar.show {
+      display: block;
+      top: 20px; /* Final position */
+      opacity: 1; /* Fade in */
+    }
+    #close-btn {
+      position: absolute;
+      margin-left: 10px;
+      top: 5px;
+      right: 10px;
+      color: white;
+      font-size: 18px;
+      cursor: pointer;
+    }

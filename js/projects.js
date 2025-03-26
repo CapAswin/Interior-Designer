@@ -74,6 +74,31 @@ const data = [
       },
     ],
   },
+  {
+    category: "Kitchen",
+    imgs: [
+      {
+        name: "",
+        path: "../images/projects/kitchen/kitchen1.jpg",
+        discription: "",
+      },
+      {
+        name: "",
+        path: "../images/projects/kitchen/kitchen2.jpg",
+        discription: "",
+      },
+      {
+        name: "",
+        path: "../images/projects/kitchen/kitchen3.jpg",
+        discription: "",
+      },
+      {
+        name: "",
+        path: "../images/projects/kitchen/kitchen4.jpg",
+        discription: "",
+      },
+    ],
+  },
 ];
 const parentGallery = document.getElementById("bodyForProject");
 const eachImg = (item, gallery) => {

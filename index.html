@@ -72,6 +72,17 @@
       </div>
       <!-- Spinner End -->
 
+      <!-- snackbar -->
+      <div id="snackbar">
+        <span id="close-btn" onclick="closeSnackbar()">&times;</span>
+
+        <span id="snackbar-message"
+          >Appointment request sent successfully!</span
+        >
+        <div id="progress-bar"></div>
+      </div>
+      <!-- snackbar end -->
+
       <!-- heared start -->
       <header id="header" class="header">
         <div class="container">
@@ -535,12 +546,13 @@
             </div>
             <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
               <!-- <form id="appointmentForm"> -->
-              <form id="contactForm">
+              <form name="submit-to-google-sheet">
                 <div class="row g-3">
                   <div class="col-12 col-sm-6">
                     <input
                       type="text"
                       id="name"
+                      name="Name"
                       class="form-control"
                       placeholder="Your Name"
                       style="height: 55px"
@@ -551,6 +563,7 @@
                     <input
                       type="email"
                       id="email"
+                      name="Mail"
                       class="form-control"
                       placeholder="Your Email"
                       style="height: 55px"
@@ -561,6 +574,7 @@
                     <input
                       type="text"
                       id="mobile"
+                      name="Phone"
                       class="form-control"
                       placeholder="Your Mobile"
                       style="height: 55px"
@@ -570,6 +584,7 @@
                   <div class="col-12 col-sm-6">
                     <select
                       id="service"
+                      name="Service"
                       class="form-select"
                       style="height: 55px; margin: 0.5rem 0"
                       required
@@ -585,6 +600,7 @@
                     <input
                       type="date"
                       id="date"
+                      name="Date"
                       class="form-control"
                       style="height: 55px"
                       required
@@ -594,6 +610,7 @@
                     <input
                       type="time"
                       id="time"
+                      name="Time"
                       class="form-control"
                       style="height: 55px"
                       required
@@ -602,6 +619,7 @@
                   <div class="col-12">
                     <textarea
                       id="message"
+                      name="Message"
                       class="form-control"
                       rows="5"
                       placeholder="Message"
@@ -680,10 +698,10 @@
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
     ></script>
-
+    <!-- 
     <script type="text/javascript">
       emailjs.init("RI-O8UFe4bV84p7By");
-    </script>
+    </script> -->
 
     <script src="./js/bootstrap.bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>

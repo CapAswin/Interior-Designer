@@ -218,12 +218,19 @@ window.addEventListener("scroll", () => {
 //   });
 
 //mail
-const BREVO_API_KEY =
-  "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"; // Replace with your actual API key
 
-document.getElementById("contactForm").addEventListener("submit", async (e) => {
+const scriptURL =
+  "https://script.google.com/macros/s/AKfycbwQWCx0kh9TMVS4K-Az0z7WjObx10VajoxGxnkeC6LHkKDnEaBgfhDHH8c5VLE0AHjsHQ/exec";
+
+const form = document.forms["contact-form"];
+
+form.addEventListener("submit", (e) => {
   e.preventDefault();
-  fetch(scriptURL, { method: "POST", body: new FormData(form) })
-    .then((response) => console.log("Success!", response))
+  const formData = new FormData(form);
+
+  fetch(scriptURL, { method: "POST", body: formData })
+    .then((response) => alert("Thank you! Form is submitted"))
     .catch((error) => console.error("Error!", error.message));
 });
+
+// MAIL

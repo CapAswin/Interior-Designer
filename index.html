@@ -1,254 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/webp" href="./images/sampleLG.webp" />
 
-    <title>Interior Design Company</title>
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/navbar.css" />
-    <link rel="stylesheet" href="./css/card.css" />
-    <link rel="stylesheet" href="./css/footer.css" />
-    <link rel="stylesheet" href="./css/services.css" />
-    <link rel="stylesheet" href="./css/firstHeader.css" />
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/webp" href="./images/sampleLG.webp" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Oswald:wght@600&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&display=swap"
-      rel="stylesheet"
-    />
+  <title>Interior Design Company</title>
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/navbar.css" />
+  <link rel="stylesheet" href="./css/card.css" />
+  <link rel="stylesheet" href="./css/footer.css" />
+  <link rel="stylesheet" href="./css/services.css" />
+  <link rel="stylesheet" href="./css/firstHeader.css" />
+  <!-- Customized Bootstrap Stylesheet -->
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
 
-    <link href="lib/animate/animate.min.css" rel="stylesheet" />
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Oswald:wght@600&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&display=swap"
+    rel="stylesheet" />
 
-    <!-- Icon Font Stylesheet -->
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
-      rel="stylesheet"
-    />
+  <link href="lib/animate/animate.min.css" rel="stylesheet" />
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
 
-    <!-- <link
+  <!-- Icon Font Stylesheet -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
+
+  <!-- <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     /> -->
 
-    <!-- Datepicker CSS (vanillajs-datepicker) -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.2.0/dist/css/datepicker.min.css"
-      rel="stylesheet"
-    />
-    <style></style>
-  </head>
+  <!-- Datepicker CSS (vanillajs-datepicker) -->
+  <link href="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.2.0/dist/css/datepicker.min.css" rel="stylesheet" />
+  <style></style>
+</head>
 
-  <body>
-    <div id="backdrop" class="backdrop"></div>
-    <div id="WholePage">
-      <!-- Spinner Start -->
-      <div
-        id="spinner"
-        class="show bg-dark position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
-      >
-        <div
-          class="spinner-grow text-primary"
-          style="width: 3rem; height: 3rem"
-          role="status"
-        >
-          <span class="sr-only">Loading...</span>
+<body>
+  <div id="backdrop" class="backdrop"></div>
+  <div id="WholePage">
+    <!-- Spinner Start -->
+    <div id="spinner"
+      class="show bg-dark position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+      <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- heared start -->
+    <header id="header" class="header">
+      <div class="container">
+        <div class="logo">
+          <a href="#">
+            <span class="boldClass">teak</span>
+            <span style="font-weight: 800"> room</span>
+          </a>
+        </div>
+
+        <div class="contact-info" onclick="justClick(event)">
+          <div class="social-links">
+            <!-- <a href="#"><i class="fab fa-twitter"></i></a> -->
+            <a class="btn-primary1" href="https://www.facebook.com/yourfacebookid" target="_blank"><i
+                class="fab fa-facebook-f"></i></a>
+            <a class="btn-primary1" href="https://www.linkedin.com/in/aswin-krishna-9b311831b/" target="_blank"><i
+                class="fab fa-linkedin-in"></i></a>
+            <a class="btn-primary1" href="https://www.instagram.com//teak_room_interiors" target="_blank"><i
+                class="fab fa-instagram"></i></a>
+          </div>
+          <a class="btn-primary1"
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=admin@teakroom.in&su=Interior%20Design%20Inquiry&body=Hello%20teak room%20Interiors,%0D%0A%0D%0AI%20am%20interested%20in%20your%20interior%20design%20services.%20Please%20provide%20me%20with%20more%20information.%0D%0A%0D%0AThank%20you!%0D%0A"
+            target="_blank">
+            <i class="fas fa-envelope"></i>
+            <span class="phone-number">admin@teakroom.in</span>
+          </a>
+          <a class="btn-primary1" href="https://wa.me/919400921011" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+          </a>
+          <a class="btn-primary1" href="tel:+919400921011">
+            <i class="fa fa-phone-alt"></i>
+            <span class="phone-number">+91 940 0921 011</span>
+          </a>
+          <button onclick="openNav(event)" id="toggleDrawer">
+            <i class="fas fa-bars"></i>
+          </button>
         </div>
       </div>
-      <!-- Spinner End -->
+    </header>
+    <!-- heared End -->
 
-      <!-- heared start -->
-      <header id="header" class="header">
-        <div class="container">
-          <div class="logo">
-            <a href="#">
-              <span class="boldClass">teak</span>
-              <span style="font-weight: 800"> room</span>
-            </a>
-          </div>
-
-          <div class="contact-info" onclick="justClick(event)">
-            <div class="social-links">
-              <!-- <a href="#"><i class="fab fa-twitter"></i></a> -->
-              <a
-                class="btn-primary1"
-                href="https://www.facebook.com/yourfacebookid"
-                target="_blank"
-                ><i class="fab fa-facebook-f"></i
-              ></a>
-              <a
-                class="btn-primary1"
-                href="https://www.linkedin.com/in/aswin-krishna-9b311831b/"
-                target="_blank"
-                ><i class="fab fa-linkedin-in"></i
-              ></a>
-              <a
-                class="btn-primary1"
-                href="https://www.instagram.com//teak_room_interiors"
-                target="_blank"
-                ><i class="fab fa-instagram"></i
-              ></a>
-            </div>
-            <a
-              class="btn-primary1"
-              href="https://mail.google.com/mail/?view=cm&fs=1&to=admin@teakroom.in&su=Interior%20Design%20Inquiry&body=Hello%20teak room%20Interiors,%0D%0A%0D%0AI%20am%20interested%20in%20your%20interior%20design%20services.%20Please%20provide%20me%20with%20more%20information.%0D%0A%0D%0AThank%20you!%0D%0A"
-              target="_blank"
-            >
-              <i class="fas fa-envelope"></i>
-              <span class="phone-number">admin@teakroom.in</span>
-            </a>
-            <a
-              class="btn-primary1"
-              href="https://wa.me/919400921011"
-              target="_blank"
-            >
-              <i class="fab fa-whatsapp"></i>
-            </a>
-            <a class="btn-primary1" href="tel:+919400921011">
-              <i class="fa fa-phone-alt"></i>
-              <span class="phone-number">+91 940 0921 011</span>
-            </a>
-            <button onclick="openNav(event)" id="toggleDrawer">
-              <i class="fas fa-bars"></i>
-            </button>
-          </div>
-        </div>
-      </header>
-      <!-- heared End -->
-
-      <!-- landing-1 -->
-      <div id="Landingimg">
-        <!-- drawer -->
-        <div id="mySidenav" class="sidenav">
-          <div class="drawer-content">
-            <a
-              href="javascript:void(0)"
-              class="closebtn"
-              onclick="closeNav(event)"
-              >&times;</a
-            >
-            <div class="sidenavContent">
-              <a href="#" onclick="closeNav(event)">About</a>
-              <a href="#" onclick="toServices(event)">Services</a>
-              <a href="./html/projects.html">Projects</a>
-              <a href="#">Clients</a>
-              <a href="#" onclick="toAppointment(event)">Contact</a>
-              <div class="sideNavFooter">
-                <p>2201 old court rd,<br />pikesville, md 21208</p>
-                <p>
-                  <a href="mailto:admin@teakroom.in">admin@teakroom.in</a>
-                </p>
-                <p>
-                  <a class="btn-primary2" href="tel:+919400921011">
-                    <i class="fa fa-phone-alt"></i>
-                    <span>+91 940 0921 011</span>
-                  </a>
-                </p>
-              </div>
+    <!-- landing-1 -->
+    <div id="Landingimg">
+      <!-- drawer -->
+      <div id="mySidenav" class="sidenav">
+        <div class="drawer-content">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav(event)">&times;</a>
+          <div class="sidenavContent">
+            <a href="#" onclick="closeNav(event)">About</a>
+            <a href="#" onclick="toServices(event)">Services</a>
+            <a href="./html/projects.html">Projects</a>
+            <a href="#">Clients</a>
+            <a href="#" onclick="toAppointment(event)">Contact</a>
+            <div class="sideNavFooter">
+              <p>2201 old court rd,<br />pikesville, md 21208</p>
+              <p>
+                <a href="mailto:admin@teakroom.in">admin@teakroom.in</a>
+              </p>
+              <p>
+                <a class="btn-primary2" href="tel:+919400921011">
+                  <i class="fa fa-phone-alt"></i>
+                  <span>+91 940 0921 011</span>
+                </a>
+              </p>
             </div>
           </div>
         </div>
-        <!-- drawerend -->
-        <section class="hero">
-          <div id="FirstHeader">
-            <div class="plusIndexZ">
-              <div class="d-flex justify-content-center gap-4">
-                <span class="boldClass">teak</span> <span> room</span>
-              </div>
-              <div class="d-flex justify-content-around gap-4 FheaderNav">
-                <div><a href="./html/projects.html">Projects</a></div>
-                <div><a href="#" onclick="toServices(event)">Services</a></div>
-                <div>
-                  <a href="#" onclick="toAppointment(event)">Contact</a>
-                </div>
-              </div>
+      </div>
+      <!-- drawerend -->
+      <section class="hero">
+        <div id="FirstHeader">
+          <div class="plusIndexZ">
+            <div class="d-flex justify-content-center gap-4">
+              <span class="boldClass">teak</span> <span> room</span>
             </div>
-
-            <div class="waves">
-              <div class="wave a"></div>
-              <div class="wave b"></div>
-              <div class="wave c"></div>
+            <div class="d-flex justify-content-around gap-4 FheaderNav">
+              <div><a href="./html/projects.html">Projects</a></div>
+              <div><a href="#" onclick="toServices(event)">Services</a></div>
+              <div>
+                <a href="#" onclick="toAppointment(event)">Contact</a>
+              </div>
             </div>
           </div>
 
-          <div class="caption">
-            <h1>Find your perfect home</h1>
-            <p>Your dream space is our focus, make it yours too.</p>
+          <div class="waves">
+            <div class="wave a"></div>
+            <div class="wave b"></div>
+            <div class="wave c"></div>
           </div>
-          <!-- end-1 -->
+        </div>
 
-          <div class="Center">
-            <div id="MainText">
-              <img class="logoMain" src="./images/teakRoomLogo.jpeg" />
-              <div class="contact-info-mainText">
-                <p>
-                  <a
-                    class="btn-primary1"
-                    href="https://mail.google.com/mail/?view=cm&fs=1&to=admin@teakroom.in&su=Interior%20Design%20Inquiry&body=Hello%20teak room%20Interiors,%0D%0A%0D%0AI%20am%20interested%20in%20your%20interior%20design%20services.%20Please%20provide%20me%20with%20more%20information.%0D%0A%0D%0AThank%20you!%0D%0A"
-                    target="_blank"
-                  >
-                    <i class="fas fa-envelope"></i>
-                    <!-- <span class="phone-number">admin@teakroom.in</span> -->
-                  </a>
-                  <a
-                    class="btn-primary1"
-                    href="https://wa.me/919400921011"
-                    target="_blank"
-                  >
-                    <i class="fab fa-whatsapp"></i>
-                    <!-- <span class="phone-number">+91 940 0921 011</span> -->
-                  </a>
-                  <a class="btn-primary1" href="tel:+919400921011">
-                    <i class="fa fa-phone-alt"></i>
-                    <!-- <span class="phone-number">+91 940 0921 011</span> -->
-                  </a>
-                  <a
-                    href="https://maps.app.goo.gl/KAowpSCXnGNvkaGr6"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <i class="fa fa-map-marker-alt"></i>
-                    <!-- <span
+        <div class="caption">
+          <h1>Find your perfect home</h1>
+          <p>Your dream space is our focus, make it yours too.</p>
+        </div>
+        <!-- end-1 -->
+
+        <div class="Center">
+          <div id="MainText">
+            <img class="logoMain" src="./images/teakRoomLogo.jpeg" />
+            <div class="contact-info-mainText">
+              <p>
+                <a class="btn-primary1"
+                  href="https://mail.google.com/mail/?view=cm&fs=1&to=admin@teakroom.in&su=Interior%20Design%20Inquiry&body=Hello%20teak room%20Interiors,%0D%0A%0D%0AI%20am%20interested%20in%20your%20interior%20design%20services.%20Please%20provide%20me%20with%20more%20information.%0D%0A%0D%0AThank%20you!%0D%0A"
+                  target="_blank">
+                  <i class="fas fa-envelope"></i>
+                  <!-- <span class="phone-number">admin@teakroom.in</span> -->
+                </a>
+                <a class="btn-primary1" href="https://wa.me/919400921011" target="_blank">
+                  <i class="fab fa-whatsapp"></i>
+                  <!-- <span class="phone-number">+91 940 0921 011</span> -->
+                </a>
+                <a class="btn-primary1" href="tel:+919400921011">
+                  <i class="fa fa-phone-alt"></i>
+                  <!-- <span class="phone-number">+91 940 0921 011</span> -->
+                </a>
+                <a href="https://maps.app.goo.gl/KAowpSCXnGNvkaGr6" target="_blank" rel="noopener noreferrer">
+                  <i class="fa fa-map-marker-alt"></i>
+                  <!-- <span
                       >1<sup>st</sup> floor, A2 Tower, opt Teak Museum,
                       Nilambur, Kerala</span
                     > -->
-                  </a>
-                </p>
-              </div>
+                </a>
+              </p>
             </div>
           </div>
-        </section>
-      </div>
+        </div>
+      </section>
+    </div>
 
-      <!-- Service Start -->
-      <div id="Services" class="">
-        <div class="">
-          <div
-            class="text-center mx-auto mb-5 wow fadeInUp"
-            data-wow-delay="0.1s"
-          >
-            <h4 class="section-title">Our Services</h4>
-            <h1 class="display-5 mb-4">
-              We Focused On Modern Architecture Design And Interior Design
-            </h1>
-          </div>
-          <div class="row g-4">
-            <!-- <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+    <!-- Service Start -->
+    <div id="Services" class="">
+      <div class="">
+        <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s">
+          <h4 class="section-title">Our Services</h4>
+          <h1 class="display-5 mb-4">
+            We Focused On Modern Architecture Design And Interior Design
+          </h1>
+        </div>
+        <div class="row g-4">
+          <!-- <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
               <div
                 class="service-item d-flex position-relative text-center h-100"
               >
@@ -269,91 +215,63 @@
                 </div>
               </div>
             </div> -->
-            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-              <div
-                class="service-item d-flex position-relative text-center h-100"
-              >
-                <div
-                  class="bg-img"
-                  style="background-image: url('img/service-2.jpg')"
-                ></div>
-                <div class="service-text p-5">
-                  <img class="mb-4" src="img/icons/icon-6.png" alt="Icon" />
-                  <h3 class="mb-3">3D Animation</h3>
-                  <p class="mb-4">
-                    Visualize your dream space with stunning 3D animations that
-                    bring ideas to life.
-                  </p>
-                  <a class="btn" href="#"
-                    ><i class="fa fa-plus me-3"></i>Read More</a
-                  >
-                </div>
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+            <div class="service-item d-flex position-relative text-center h-100">
+              <div class="bg-img" style="background-image: url('img/service-2.jpg')"></div>
+              <div class="service-text p-5">
+                <img class="mb-4" src="img/icons/icon-6.png" alt="Icon" />
+                <h3 class="mb-3">3D Animation</h3>
+                <p class="mb-4">
+                  Visualize your dream space with stunning 3D animations that
+                  bring ideas to life.
+                </p>
+                <a class="btn" href="#"><i class="fa fa-plus me-3"></i>Read More</a>
               </div>
             </div>
-            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-              <div
-                class="service-item d-flex position-relative text-center h-100"
-              >
-                <div
-                  class="bg-img"
-                  style="background-image: url('img/service-3.jpg')"
-                ></div>
-                <div class="service-text p-5">
-                  <img class="mb-4" src="img/icons/icon-7.png" alt="Icon" />
-                  <h3 class="mb-3">Space Planning</h3>
-                  <p class="mb-4">
-                    Maximize your space with smart, functional, and creative
-                    layouts.
-                  </p>
-                  <a class="btn" href="#"
-                    ><i class="fa fa-plus me-3"></i>Read More</a
-                  >
-                </div>
+          </div>
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+            <div class="service-item d-flex position-relative text-center h-100">
+              <div class="bg-img" style="background-image: url('img/service-3.jpg')"></div>
+              <div class="service-text p-5">
+                <img class="mb-4" src="img/icons/icon-7.png" alt="Icon" />
+                <h3 class="mb-3">Space Planning</h3>
+                <p class="mb-4">
+                  Maximize your space with smart, functional, and creative
+                  layouts.
+                </p>
+                <a class="btn" href="#"><i class="fa fa-plus me-3"></i>Read More</a>
               </div>
             </div>
-            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-              <div
-                class="service-item d-flex position-relative text-center h-100"
-              >
-                <div
-                  class="bg-img"
-                  style="background-image: url('img/service-4.jpg')"
-                ></div>
-                <div class="service-text p-5">
-                  <img class="mb-4" src="img/icons/icon-8.png" alt="Icon" />
-                  <h3 class="mb-3">Interior Design</h3>
-                  <p class="mb-4">
-                    Transform your interiors with designs tailored to your style
-                    and needs.
-                  </p>
-                  <a class="btn" href="#"
-                    ><i class="fa fa-plus me-3"></i>Read More</a
-                  >
-                </div>
+          </div>
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="service-item d-flex position-relative text-center h-100">
+              <div class="bg-img" style="background-image: url('img/service-4.jpg')"></div>
+              <div class="service-text p-5">
+                <img class="mb-4" src="img/icons/icon-8.png" alt="Icon" />
+                <h3 class="mb-3">Interior Design</h3>
+                <p class="mb-4">
+                  Transform your interiors with designs tailored to your style
+                  and needs.
+                </p>
+                <a class="btn" href="#"><i class="fa fa-plus me-3"></i>Read More</a>
               </div>
             </div>
-            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-              <div
-                class="service-item d-flex position-relative text-center h-100"
-              >
-                <div
-                  class="bg-img"
-                  style="background-image: url('img/service-5.jpg')"
-                ></div>
-                <div class="service-text p-5">
-                  <img class="mb-4" src="img/icons/icon-9.png" alt="Icon" />
-                  <h3 class="mb-3">Renovation</h3>
-                  <p class="mb-4">
-                    Reimagine and rebuild your space into something
-                    extraordinary.
-                  </p>
-                  <a class="btn" href="#"
-                    ><i class="fa fa-plus me-3"></i>Read More</a
-                  >
-                </div>
+          </div>
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+            <div class="service-item d-flex position-relative text-center h-100">
+              <div class="bg-img" style="background-image: url('img/service-5.jpg')"></div>
+              <div class="service-text p-5">
+                <img class="mb-4" src="img/icons/icon-9.png" alt="Icon" />
+                <h3 class="mb-3">Renovation</h3>
+                <p class="mb-4">
+                  Reimagine and rebuild your space into something
+                  extraordinary.
+                </p>
+                <a class="btn" href="#"><i class="fa fa-plus me-3"></i>Read More</a>
               </div>
             </div>
-            <!-- <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+          </div>
+          <!-- <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
               <div
                 class="service-item d-flex position-relative text-center h-100"
               >
@@ -374,108 +292,95 @@
                 </div>
               </div>
             </div> -->
-          </div>
         </div>
       </div>
-      <!-- Service End -->
-      <!-- projectRoute -->
-      <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s">
-        <h4 class="section-title">Our Services</h4>
-        <h1 class="display-5 mb-4">From Vision to Reality</h1>
+    </div>
+    <!-- Service End -->
+    <!-- projectRoute -->
+    <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s">
+      <h4 class="section-title">Our Services</h4>
+      <h1 class="display-5 mb-4">From Vision to Reality</h1>
+    </div>
+    <div class="process-container">
+      <div class="process-step">
+        <div class="step-image">
+          <img src="./img/route-plan/design-client-2.png" />
+        </div>
+        <h3 class="step-title">Client Engagement</h3>
+        <p class="step-desc">Discuss your vision with our experts.</p>
       </div>
-      <div class="process-container">
-        <div class="process-step">
-          <div class="step-image">
-            <img src="./img/route-plan/design-client-2.png" />
-          </div>
-          <h3 class="step-title">Client Engagement</h3>
-          <p class="step-desc">Discuss your vision with our experts.</p>
+      <div class="process-step">
+        <div class="step-image">
+          <img src="./img/route-plan/drawing-3.png" />
         </div>
-        <div class="process-step">
-          <div class="step-image">
-            <img src="./img/route-plan/drawing-3.png" />
-          </div>
-          <h3 class="step-title">Design Development</h3>
-          <p class="step-desc">Finalize your design ideas with our team.</p>
-        </div>
-        <div class="process-step">
-          <div class="step-image">
-            <img src="./img/route-plan/design-approval-2.png" />
-          </div>
-          <h3 class="step-title">Design Approval</h3>
-          <p class="step-desc">Approve custom furniture designs.</p>
-        </div>
-        <div class="process-step">
-          <div class="step-image">
-            <img src="./img/route-plan/working.jpg" />
-          </div>
-          <h3 class="step-title">Implementation</h3>
-          <p class="step-desc">Your furniture crafted to perfection.</p>
-        </div>
-        <div class="process-step">
-          <div class="step-image">
-            <img src="./img/route-plan/decor-1.jpg" />
-          </div>
-          <h3 class="step-title">Project Completion</h3>
-          <p class="step-desc">On-time delivery and project completion.</p>
-        </div>
+        <h3 class="step-title">Design Development</h3>
+        <p class="step-desc">Finalize your design ideas with our team.</p>
       </div>
-      <!--  -->
-      <!-- Project Start -->
-      <div class="project py-5">
-        <div class="container">
-          <div
-            class="text-center mx-auto mb-5 wow fadeInUp"
-            data-wow-delay="0.1s"
-            style="max-width: 600px"
-          >
-            <h4 class="section-title">Our Highlights</h4>
-            <h1 class="display-5 mb-4">
-              Visit Our Latest Projects And Our Innovative Works
-            </h1>
-          </div>
-          <div class="row g-4 wow highlights fadeInUp" data-wow-delay="0.3s">
-            <div class="col-lg-8">
-              <div class="tab-content w-100">
-                <div class="tab-pane fade show active" id="tab-pane-1">
-                  <div class="row g-4">
-                    <div class="col-md-6" style="min-height: 300px">
-                      <div class="position-relative h-100">
-                        <img
-                          class="position-absolute img-fluid w-100 h-100"
-                          src="img/project-1.jpg"
-                          style="object-fit: cover"
-                          alt=""
-                        />
-                      </div>
+      <div class="process-step">
+        <div class="step-image">
+          <img src="./img/route-plan/design-approval-2.png" />
+        </div>
+        <h3 class="step-title">Design Approval</h3>
+        <p class="step-desc">Approve custom furniture designs.</p>
+      </div>
+      <div class="process-step">
+        <div class="step-image">
+          <img src="./img/route-plan/working.jpg" />
+        </div>
+        <h3 class="step-title">Implementation</h3>
+        <p class="step-desc">Your furniture crafted to perfection.</p>
+      </div>
+      <div class="process-step">
+        <div class="step-image">
+          <img src="./img/route-plan/decor-1.jpg" />
+        </div>
+        <h3 class="step-title">Project Completion</h3>
+        <p class="step-desc">On-time delivery and project completion.</p>
+      </div>
+    </div>
+    <!--  -->
+    <!-- Project Start -->
+    <div class="project py-5">
+      <div class="container">
+        <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px">
+          <h4 class="section-title">Our Highlights</h4>
+          <h1 class="display-5 mb-4">
+            Visit Our Latest Projects And Our Innovative Works
+          </h1>
+        </div>
+        <div class="row g-4 wow highlights fadeInUp" data-wow-delay="0.3s">
+          <div class="col-lg-8">
+            <div class="tab-content w-100">
+              <div class="tab-pane fade show active" id="tab-pane-1">
+                <div class="row g-4">
+                  <div class="col-md-6" style="min-height: 300px">
+                    <div class="position-relative h-100">
+                      <img class="position-absolute img-fluid w-100 h-100" src="img/project-1.jpg"
+                        style="object-fit: cover" alt="" />
                     </div>
-                    <div class="col-md-6 h-90">
-                      <h2 class="mb-3">
-                        15+ Years Of Experience In Architecture Design Industry
-                      </h2>
-                      <p class="mb-4">
-                        15+ years experience Variant finishes, on-time delivery
-                        Competitive pricing - 20 years product warranty,
-                        lifetime service
-                      </p>
-                      <p>
-                        <i class="fa fa-check text-primary me-3"></i>Design
-                        Approach
-                      </p>
-                      <p>
-                        <i class="fa fa-check text-primary me-3"></i>Innovative
-                        Solutions
-                      </p>
-                      <p>
-                        <i class="fa fa-check text-primary me-3"></i>Project
-                        Management
-                      </p>
-                      <a
-                        href="./html/projects.html"
-                        class="btn btn-primary py-3 px-5 mt-3"
-                        >Visit Gallery</a
-                      >
-                    </div>
+                  </div>
+                  <div class="col-md-6 h-90">
+                    <h2 class="mb-3">
+                      15+ Years Of Experience In Architecture Design Industry
+                    </h2>
+                    <p class="mb-4">
+                      15+ years experience Variant finishes, on-time delivery
+                      Competitive pricing - 20 years product warranty,
+                      lifetime service
+                    </p>
+                    <p>
+                      <i class="fa fa-check text-primary me-3"></i>Design
+                      Approach
+                    </p>
+                    <p>
+                      <i class="fa fa-check text-primary me-3"></i>Innovative
+                      Solutions
+                    </p>
+                    <p>
+                      <i class="fa fa-check text-primary me-3"></i>Project
+                      Management
+                    </p>
+                    <a href="./html/projects.html" class="btn btn-primary py-3 px-5 mt-3">Visit Gallery</a>
                   </div>
                 </div>
               </div>
@@ -483,231 +388,158 @@
           </div>
         </div>
       </div>
-      <!-- Project End -->
+    </div>
+    <!-- Project End -->
 
-      <!-- Appointment Start -->
-      <div id="Appointment" class="Appointment py-5">
-        <div class="container">
-          <div class="row row1 ss">
-            <div
-              class="col-lg-6 wow fadeInUp contentAppointment"
-              data-wow-delay="0.1s"
-            >
-              <h4 class="section-title-new">Appointment</h4>
-              <h1 class="display-5 mb-4">
-                Make An Appointment To Start Your Dream Project
-              </h1>
-              <p class="mb-4">
-                Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit.
-                Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit,
-                sed stet lorem sit clita duo justo magna dolore erat amet
-              </p>
-              <div class="row g-4">
-                <div class="col-12">
-                  <div class="d-flex">
-                    <div
-                      class="d-flex flex-shrink-0 align-items-center justify-content-center"
-                      style="width: 65px; height: 65px"
-                    >
-                      <i class="fa fa-2x fa-phone-alt text-primary1"></i>
-                    </div>
-                    <div class="ms-4">
-                      <p class="mb-2">Call Us Now</p>
-                      <h3 class="mb-0"><span>+91 940 0921 011</span></h3>
-                    </div>
+    <!-- Appointment Start -->
+    <div id="Appointment" class="Appointment py-5">
+      <div class="container">
+        <div class="row row1 ss">
+          <div class="col-lg-6 wow fadeInUp contentAppointment" data-wow-delay="0.1s">
+            <h4 class="section-title-new">Appointment</h4>
+            <h1 class="display-5 mb-4">
+              Make An Appointment To Start Your Dream Project
+            </h1>
+            <p class="mb-4">
+              Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit.
+              Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit,
+              sed stet lorem sit clita duo justo magna dolore erat amet
+            </p>
+            <div class="row g-4">
+              <div class="col-12">
+                <div class="d-flex">
+                  <div class="d-flex flex-shrink-0 align-items-center justify-content-center"
+                    style="width: 65px; height: 65px">
+                    <i class="fa fa-2x fa-phone-alt text-primary1"></i>
+                  </div>
+                  <div class="ms-4">
+                    <p class="mb-2">Call Us Now</p>
+                    <h3 class="mb-0"><span>+91 940 0921 011</span></h3>
                   </div>
                 </div>
-                <div class="col-12">
-                  <div class="d-flex">
-                    <div
-                      class="d-flex flex-shrink-0 align-items-center justify-content-center"
-                      style="width: 65px; height: 65px"
-                    >
-                      <i class="fa fa-2x fa-envelope-open text-primary1"></i>
-                    </div>
-                    <div class="ms-4">
-                      <p class="mb-2">Mail Us Now</p>
-                      <h3 class="mb-0">admin@teakroom.in</h3>
-                    </div>
+              </div>
+              <div class="col-12">
+                <div class="d-flex">
+                  <div class="d-flex flex-shrink-0 align-items-center justify-content-center"
+                    style="width: 65px; height: 65px">
+                    <i class="fa fa-2x fa-envelope-open text-primary1"></i>
+                  </div>
+                  <div class="ms-4">
+                    <p class="mb-2">Mail Us Now</p>
+                    <h3 class="mb-0">admin@teakroom.in</h3>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
-              <form method="post" action="" name="contact-form">
-                <div class="row g-3">
-                  <div class="col-12 col-sm-6">
-                    <input
-                      type="text"
-                      id="name"
-                      name="Name"
-                      class="form-control"
-                      placeholder="Your Name"
-                      style="height: 55px"
-                      required
-                    />
-                  </div>
-                  <div class="col-12 col-sm-6">
-                    <input
-                      type="email"
-                      id="email"
-                      name="Mail"
-                      class="form-control"
-                      placeholder="Your Email"
-                      style="height: 55px"
-                      required
-                    />
-                  </div>
-                  <div class="col-12 col-sm-6">
-                    <input
-                      type="text"
-                      id="mobile"
-                      name="Phone"
-                      class="form-control"
-                      placeholder="Your Mobile"
-                      style="height: 55px"
-                      required
-                    />
-                  </div>
-                  <div class="col-12 col-sm-6">
-                    <select
-                      id="service"
-                      name="Service"
-                      class="form-select"
-                      style="height: 55px; margin: 0.5rem 0"
-                      required
-                    >
-                      <option value="" selected disabled>Choose Service</option>
-                      <option value="Space Planning">Space Planning</option>
-                      <option value="3D Animation">3D Animation</option>
-                      <option value="Renovation">Renovation</option>
-                      <option value="Estimation">Estimation</option>
-                    </select>
-                  </div>
-                  <div class="col-12 col-sm-6">
-                    <input
-                      type="date"
-                      id="date"
-                      name="Date"
-                      class="form-control"
-                      style="height: 55px"
-                      required
-                    />
-                  </div>
-                  <div class="col-12 col-sm-6">
-                    <input
-                      type="time"
-                      id="time"
-                      name="Time"
-                      class="form-control"
-                      style="height: 55px"
-                      required
-                    />
-                  </div>
-                  <div class="col-12">
-                    <textarea
-                      id="message"
-                      name="Message"
-                      class="form-control"
-                      rows="5"
-                      placeholder="Message"
-                      required
-                    ></textarea>
-                  </div>
-                  <div class="col-12">
-                    <input
-                      class="btn btn-primary w-100 py-3"
-                      id="contactUs_btn"
-                      type="submit"
-                      value="Book Appointment"
-                      id="submit"
-                    />
-                    <!-- <button
+          </div>
+          <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+            <form name="contact-form">
+              <div class="row g-3">
+                <div class="col-12 col-sm-6">
+                  <input type="text" id="name" name="Name" class="form-control" placeholder="Your Name"
+                    style="height: 55px" required />
+                </div>
+                <div class="col-12 col-sm-6">
+                  <input type="email" id="email" name="Mail" class="form-control" placeholder="Your Email"
+                    style="height: 55px" required />
+                </div>
+                <div class="col-12 col-sm-6">
+                  <input type="text" id="mobile" name="Phone" class="form-control" placeholder="Your Mobile"
+                    style="height: 55px" required />
+                </div>
+                <div class="col-12 col-sm-6">
+                  <select id="service" name="Service" class="form-select" style="height: 55px; margin: 0.5rem 0"
+                    required>
+                    <option value="" selected disabled>Choose Service</option>
+                    <option value="Space Planning">Space Planning</option>
+                    <option value="3D Animation">3D Animation</option>
+                    <option value="Renovation">Renovation</option>
+                    <option value="Estimation">Estimation</option>
+                  </select>
+                </div>
+                <div class="col-12 col-sm-6">
+                  <input type="date" id="date" name="Date" class="form-control" style="height: 55px" required />
+                </div>
+                <div class="col-12 col-sm-6">
+                  <input type="time" id="time" name="Time" class="form-control" style="height: 55px" required />
+                </div>
+                <div class="col-12">
+                  <textarea id="message" name="Message" class="form-control" rows="5" placeholder="Message"
+                    required></textarea>
+                </div>
+                <div class="col-12">
+                  <input class="btn btn-primary w-100 py-3" id="contactUs_btn" type="submit" value="Book Appointment"
+                    id="submit" />
+                  <!-- <button
                       onclick="sendEmail()"
                       class="btn btn-primary w-100 py-3"
                       id="contactUs_btn"
                       type="submit"
                     > -->
-                      Book Appointment
-                    </button>
-                  </div>
+                  Book Appointment
+                  </button>
                 </div>
-              </form>
-            </div>
+              </div>
+            </form>
           </div>
         </div>
       </div>
-      <!-- Appointment End -->
-      <footer class="custom-footer">
-        <h1 style="font-family: 'Playfair Display', serif">Contact</h1>
-        <p>
-          Designing spaces that inspire and endure, crafted with care and
-          creativity. Let’s turn your dream into a reality.<br />
-          © 2024 <strong>teak room</strong>. All rights reserved.<br />
-          Feeling inspired or ready to refresh your space? <br />
-          We’d love to hear from you—don’t hesitate to reach out!
-        </p>
-
-        <div class="contact-info1 d-flex flex-column">
-          <p>
-            1<sup>st</sup> floor, A2 Tower, opposite Teak Museum,<br />
-            Nilambur, Kerala 679329
-          </p>
-          <p>
-            <a href="mailto:admin@teakroom.in">admin@teakroom.in</a>
-          </p>
-          <a class="btn-primary2" href="tel:+919400921011">
-            <i class="fa fa-phone-alt"></i>
-            <span>+91 940 0921 011</span>
-          </a>
-        </div>
-        <div class="d-flex justify-content-center gap-4 mt-5">
-          <a
-            class="btn-primary1"
-            href="https://www.instagram.com//teak_room_interiors"
-            target="_blank"
-            ><i class="fab fa-instagram fa-2x"></i
-          ></a>
-          <a
-            class="btn-primary1"
-            href="https://www.facebook.com/yourfacebookid"
-            target="_blank"
-            ><i class="fab fa-facebook-f fa-2x"></i
-          ></a>
-        </div>
-      </footer>
     </div>
-    <!-- Back to Top -->
-    <a
-      href="https://wa.me/919400921011"
-      target="_blank"
-      class="btn btn-lg btn-primary btn-lg-square whatsapp-flt"
-      ><i class="fab fa-whatsapp"></i
-    ></a>
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"
-      ><i class="bi bi-arrow-up"></i
-    ></a>
+    <!-- Appointment End -->
+    <footer class="custom-footer">
+      <h1 style="font-family: 'Playfair Display', serif">Contact</h1>
+      <p>
+        Designing spaces that inspire and endure, crafted with care and
+        creativity. Let’s turn your dream into a reality.<br />
+        © 2024 <strong>teak room</strong>. All rights reserved.<br />
+        Feeling inspired or ready to refresh your space? <br />
+        We’d love to hear from you—don’t hesitate to reach out!
+      </p>
 
-    <!-- libraries -->
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
-    ></script>
+      <div class="contact-info1 d-flex flex-column">
+        <p>
+          1<sup>st</sup> floor, A2 Tower, opposite Teak Museum,<br />
+          Nilambur, Kerala 679329
+        </p>
+        <p>
+          <a href="mailto:admin@teakroom.in">admin@teakroom.in</a>
+        </p>
+        <a class="btn-primary2" href="tel:+919400921011">
+          <i class="fa fa-phone-alt"></i>
+          <span>+91 940 0921 011</span>
+        </a>
+      </div>
+      <div class="d-flex justify-content-center gap-4 mt-5">
+        <a class="btn-primary1" href="https://www.instagram.com//teak_room_interiors" target="_blank"><i
+            class="fab fa-instagram fa-2x"></i></a>
+        <a class="btn-primary1" href="https://www.facebook.com/yourfacebookid" target="_blank"><i
+            class="fab fa-facebook-f fa-2x"></i></a>
+      </div>
+    </footer>
+  </div>
+  <!-- Back to Top -->
+  <a href="https://wa.me/919400921011" target="_blank" class="btn btn-lg btn-primary btn-lg-square whatsapp-flt"><i
+      class="fab fa-whatsapp"></i></a>
+  <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
 
-    <script type="text/javascript">
-      emailjs.init("RI-O8UFe4bV84p7By");
-    </script>
+  <!-- libraries -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
-    <script src="./js/bootstrap.bundle.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script> -->
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <!-- js for the tmplate -->
-    <script src="function.js"></script>
+  <script type="text/javascript">
+    emailjs.init("RI-O8UFe4bV84p7By");
+  </script>
 
-    <script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.2.0/dist/js/datepicker-full.min.js"></script>
-  </body>
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script> -->
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/waypoints/waypoints.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <!-- js for the tmplate -->
+  <script src="function.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.2.0/dist/js/datepicker-full.min.js"></script>
+</body>
+
 </html>

@@ -250,26 +250,15 @@ window.addEventListener("scroll", () => {
 
 // MAIL
 const scriptURL =
-  "https://script.google.com/macros/s/AKfycbzqxmMqo9mJ9Kpwn9RmJzFhycjNQitrMMBlWJESgR0wWsvPu4hrkf2LcVZl2JCw8Xr8gQ/exec";
+  "https://script.google.com/macros/s/AKfycbwQWCx0kh9TMVS4K-Az0z7WjObx10VajoxGxnkeC6LHkKDnEaBgfhDHH8c5VLE0AHjsHQ/exec";
 
 const form = document.forms["contact-form"];
 
-const data = {
-  name: document.getElementById("Name").value,
-  email: document.getElementById("email").value,
-  mobile: document.getElementById("mobile").value,
-  service: document.getElementById("service").value,
-  date: document.getElementById("date").value,
-  time: document.getElementById("time").value,
-  message: document.getElementById("message").value,
-};
 form.addEventListener("submit", (e) => {
   e.preventDefault();
-  console.log(data);
-  fetch(scriptURL, { method: "POST", body: data })
+  const formData = new FormData(form);
+
+  fetch(scriptURL, { method: "POST", body: formData })
     .then((response) => alert("Thank you! Form is submitted"))
-    .then(() => {
-      window.location.reload();
-    })
     .catch((error) => console.error("Error!", error.message));
 });

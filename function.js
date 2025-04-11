@@ -173,77 +173,92 @@ window.addEventListener("scroll", () => {
 });
 
 //mail
-const BREVO_API_KEY =
-  "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"; // Replace with your actual API key
+// const BREVO_API_KEY =
+//   "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"; // Replace with your actual API key
 
-document.getElementById("contactForm").addEventListener("submit", async (e) => {
+// document.getElementById("contactForm").addEventListener("submit", async (e) => {
+//   e.preventDefault();
+
+//   const data = {
+//     name: document.getElementById("name").value,
+//     email: document.getElementById("email").value,
+//     mobile: document.getElementById("mobile").value,
+//     service: document.getElementById("service").value,
+//     date: document.getElementById("date").value,
+//     time: document.getElementById("time").value,
+//     message: document.getElementById("message").value,
+//   };
+//   // Your custom HTML template
+//   const mailTemplate = `
+//     <html>
+//       <body style="font-family: 'Arial', sans-serif; line-height: 1.6; background-color: #f9f9f9; margin: 0; padding: 0; color: #444;">
+//         <div class="email-container" style="max-width: 600px; margin: 20px auto; background: #ffffff; border: 1px solid #eaeaea; border-radius: 8px; overflow: hidden;">
+//           <div class="header" style="background: #f9f9f9; color: #7a543b; padding: 20px; text-align: center; font-size: 18px; font-weight: bold;">
+//             New Appointment Request
+//           </div>
+//           <div class="body" style="padding: 20px;">
+//             <h2 style="color: #7a543b; font-size: 18px; margin: 0 0 10px;">Hello, you have a new appointment request:</h2>
+//             <div class="info" style="margin: 15px 0; font-size: 14px; line-height: 1.5;">
+//               <div style="margin-bottom: 8px;"><span style="font-weight: bold; color: #7a543b;">Name:</span> ${data.name}</div>
+//               <div style="margin-bottom: 8px;"><span style="font-weight: bold; color: #7a543b;">Email:</span> ${data.email}</div>
+//               <div style="margin-bottom: 8px;"><span style="font-weight: bold; color: #7a543b;">Mobile:</span> ${data.mobile}</div>
+//               <div style="margin-bottom: 8px;"><span style="font-weight: bold; color: #7a543b;">Service:</span> ${data.service}</div>
+//               <div style="margin-bottom: 8px;"><span style="font-weight: bold; color: #7a543b;">Preferred Date:</span> ${data.date}</div>
+//               <div style="margin-bottom: 8px;"><span style="font-weight: bold; color: #7a543b;">Preferred Time:</span> ${data.time}</div>
+//               <div style="margin-bottom: 8px;"><span style="font-weight: bold; color: #7a543b;">Message:</span> ${data.message}</div>
+//             </div>
+//             <a href="mailto:${data.email}" class="cta-button" style="display: inline-block; background-color: #7a543b; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; margin-top: 20px; font-size: 14px;">Reply to Client</a>
+//           </div>
+//           <div class="footer" style="text-align: center; background: #f9f9f9; padding: 15px; font-size: 12px; color: #777;">
+//             <p>This email was sent automatically by Teak Room's system.</p>
+//             <p>&copy; 2025 Teak Room</p>
+//           </div>
+//         </div>
+//       </body>
+//     </html>
+//   `;
+
+//   const emailData = {
+//     sender: { name: data.name, email: "aswinjocker@gmail.com" }, // Sender's email
+//     to: [{ email: "admin@teakroom.in", name: "Admin Teakroom" }], // Recipient's email
+//     subject: "New Appointment Request",
+//     htmlContent: mailTemplate, // Custom HTML content
+//   };
+
+//   try {
+//     const response = await fetch("https://api.brevo.com/v3/smtp/email", {
+//       method: "POST",
+//       headers: {
+//         "Content-Type": "application/json",
+//         "api-key": BREVO_API_KEY,
+//       },
+//       body: JSON.stringify(emailData),
+//     });
+
+//     if (response.ok) {
+//       alert("Email sent successfully!");
+//       e.target.reset();
+//     } else {
+//       const result = await response.json();
+//       alert(`Failed to send email: ${result.message}`);
+//     }
+//   } catch (error) {
+//     console.error("Error:", error);
+//     alert("An error occurred while sending the email.");
+//   }
+// });
+
+// MAIL
+const scriptURL =
+  "https://script.google.com/macros/s/AKfycbwQWCx0kh9TMVS4K-Az0z7WjObx10VajoxGxnkeC6LHkKDnEaBgfhDHH8c5VLE0AHjsHQ/exec";
+
+const form = document.forms["contact-form"];
+
+form.addEventListener("submit", (e) => {
   e.preventDefault();
+  const formData = new FormData(form);
 
-  const data = {
-    name: document.getElementById("name").value,
-    email: document.getElementById("email").value,
-    mobile: document.getElementById("mobile").value,
-    service: document.getElementById("service").value,
-    date: document.getElementById("date").value,
-    time: document.getElementById("time").value,
-    message: document.getElementById("message").value,
-  };
-  // Your custom HTML template
-  const mailTemplate = `
-    <html>
-      <body style="font-family: 'Arial', sans-serif; line-height: 1.6; background-color: #f9f9f9; margin: 0; padding: 0; color: #444;">
-        <div class="email-container" style="max-width: 600px; margin: 20px auto; background: #ffffff; border: 1px solid #eaeaea; border-radius: 8px; overflow: hidden;">
-          <div class="header" style="background: #f9f9f9; color: #7a543b; padding: 20px; text-align: center; font-size: 18px; font-weight: bold;">
-            New Appointment Request
-          </div>
-          <div class="body" style="padding: 20px;">
-            <h2 style="color: #7a543b; font-size: 18px; margin: 0 0 10px;">Hello, you have a new appointment request:</h2>
-            <div class="info" style="margin: 15px 0; font-size: 14px; line-height: 1.5;">
-              <div style="margin-bottom: 8px;"><span style="font-weight: bold; color: #7a543b;">Name:</span> ${data.name}</div>
-              <div style="margin-bottom: 8px;"><span style="font-weight: bold; color: #7a543b;">Email:</span> ${data.email}</div>
-              <div style="margin-bottom: 8px;"><span style="font-weight: bold; color: #7a543b;">Mobile:</span> ${data.mobile}</div>
-              <div style="margin-bottom: 8px;"><span style="font-weight: bold; color: #7a543b;">Service:</span> ${data.service}</div>
-              <div style="margin-bottom: 8px;"><span style="font-weight: bold; color: #7a543b;">Preferred Date:</span> ${data.date}</div>
-              <div style="margin-bottom: 8px;"><span style="font-weight: bold; color: #7a543b;">Preferred Time:</span> ${data.time}</div>
-              <div style="margin-bottom: 8px;"><span style="font-weight: bold; color: #7a543b;">Message:</span> ${data.message}</div>
-            </div>
-            <a href="mailto:${data.email}" class="cta-button" style="display: inline-block; background-color: #7a543b; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; margin-top: 20px; font-size: 14px;">Reply to Client</a>
-          </div>
-          <div class="footer" style="text-align: center; background: #f9f9f9; padding: 15px; font-size: 12px; color: #777;">
-            <p>This email was sent automatically by Teak Room's system.</p>
-            <p>&copy; 2025 Teak Room</p>
-          </div>
-        </div>
-      </body>
-    </html>
-  `;
-
-  const emailData = {
-    sender: { name: data.name, email: "aswinjocker@gmail.com" }, // Sender's email
-    to: [{ email: "admin@teakroom.in", name: "Admin Teakroom" }], // Recipient's email
-    subject: "New Appointment Request",
-    htmlContent: mailTemplate, // Custom HTML content
-  };
-
-  try {
-    const response = await fetch("https://api.brevo.com/v3/smtp/email", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        "api-key": BREVO_API_KEY,
-      },
-      body: JSON.stringify(emailData),
-    });
-
-    if (response.ok) {
-      alert("Email sent successfully!");
-      e.target.reset();
-    } else {
-      const result = await response.json();
-      alert(`Failed to send email: ${result.message}`);
-    }
-  } catch (error) {
-    console.error("Error:", error);
-    alert("An error occurred while sending the email.");
-  }
+  fetch(scriptURL, { method: "POST", body: formData })
+    .then((response) => alert("Thank you! Form is submitted"))
+    .catch((error) => console.error("Error!", error.message));
 });
